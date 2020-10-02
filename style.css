@@ -1,3 +1,32 @@
+/* ==========
+Variables 
+========== */
+
+:root {
+    --header-height: 3rem;
+
+    /* colors */
+    --first-color: #FFB997;
+    --dark-color: #0B032D;
+    --dark-color-alt: #843B62;
+    --white-color: #FFFFFF;
+
+    /* typography */
+    --body-font: 'Roboto', sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    /* z index */
+    --z-fixed: 100;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
