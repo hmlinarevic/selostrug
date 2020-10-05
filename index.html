@@ -5,31 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selo Strug</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <header class="header">
-        <div class="ctn ctn-flex">
-            <img class="logo" src="./img/logo/logo-black.png" alt="">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="list-item"><a href="#" class="nav-link">home</a></li>
-                    <li class="list-item"><a href="#" class="nav-link">about</a></li>
-                    <li class="list-item"><a href="#" class="nav-link">contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a class="header__logo" href="#">Selo Strug</a>
+        <span class="header__toggle fas fa-bars" id="nav-toggle" name="menu-outline"></span>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content">
+                <span class="nav__close fas fa-times" id="nav-close" name="close-outline"></span>
+                
+                <div class="nav__details">
+                    <div class="nav__img">
+                        <img class="logo" src="./img/logo/logo-white.png" alt="logo">
+                    </div>
+
+                    <div>
+                        <a class="nav__name" href="#">Selo Strug</a>
+                        <span class="nav__name-tag">Restaurant & Lodging</span>
+                    </div>
+                </div>
+                <!-- nav__details -->
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- nav__menu -->
+
+                <div class="nav__social">
+                    <a href="#" class="nav__social-icon"><span class="fas fa-share-alt"></span></a>
+                    <a href="#" class="nav__social-icon"><span class="fas fa-code-branch"></span></a>
+                    <a href="#" class="nav__social-icon"><span class="fas fa-terminal"></span></a>
+                </div>
+                <!-- nav__social -->
+
+            </div>
+            <!-- nav__content -->
+        </nav>
+        <!-- nav -->
     </header>
-    
-    <h1>Hi,</h1>
-    <h2>Welcome to my first website</h2>
+    <!-- header -->
 
-    
-
-    <div class="box">box</div>
-    
+    <script src="./index.js"></script>
 </body>
 
 </html>
