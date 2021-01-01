@@ -5,12 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selo Strug</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>Hi,</h1>
-    <h2>Welcome to my first website</h2>
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__logo" href="#">Selo Strug</a>
+            <span class="header__toggle fas fa-bars" id="toggle-nav"></span>
+            <nav class="nav" id="navigation">
+                <div class="nav__content--grid">
+                    <span class="nav__close fas fa-times" id="close-nav"></span>
+                    <div class="nav__profile">
+                        <div class="nav__img">
+                            <img class="logo" src="./assets/logo/butterfly.png" alt="">
+                        </div>
+                        <div>
+                            <a class="nav__name" href="#">Selo Strug</a>
+                            <span class="nav__tag">Design Studio</span>
+                        </div>
+                    </div>
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">home</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">skills</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__social">
+                        <span class="fab fa-instagram"></span>
+                        <span class="fab fa-facebook-square"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class='hero'></div>
+
+        <main class="main" role="main">
+
+            <div class="main__about">
+                <h1 class="main__about--title">Posjetite Lonjsko Polje</h1>
+                <p class="main__about--info">Zaljubite se u netaknutu prirodu, opustite se i odmorite. Provedite prekrasan vikend, za sve ljubitelje ptica i zivotinja. Bogati svijet bio raznolikost.</p>
+            </div>
+
+
+
+
+        </main>
+
+    </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
