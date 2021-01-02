@@ -5,56 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selo Strug</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
-    <header class="header">
-        <a class="header__logo" href="#">Selo Strug</a>
-        <span class="header__toggle fas fa-bars" id="nav-toggle" name="menu-outline"></span>
-
-        <nav class="nav" id="nav-menu">
-            <div class="nav__content">
-                <span class="nav__close fas fa-times" id="nav-close" name="close-outline"></span>
-                
-                <div class="nav__details">
-                    <div class="nav__img">
-                        <img class="logo" src="./img/logo/logo-white.png" alt="logo">
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__logo" href="#">Selo Strug</a>
+            <span class="header__toggle fas fa-bars" id="toggle-nav"></span>
+            <nav class="nav" id="navigation">
+                <div class="nav__content--grid">
+                    <span class="nav__close fas fa-times" id="close-nav"></span>
+                    <div class="nav__profile">
+                        <div class="nav__img">
+                            <img class="logo" src="./assets/logo/butterfly.png" alt="">
+                        </div>
+                        <div>
+                            <a class="nav__name" href="#">Selo Strug</a>
+                            <span class="nav__tag">Design Studio</span>
+                        </div>
                     </div>
-
-                    <div>
-                        <a class="nav__name" href="#">Selo Strug</a>
-                        <span class="nav__name-tag">Restaurant & Lodging</span>
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">home</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">skills</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__social">
+                        <span class="fab fa-instagram"></span>
+                        <span class="fab fa-facebook-square"></span>
                     </div>
                 </div>
-                <!-- nav__details -->
+            </nav>
+        </header>
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                    </ul>
+        <div class="hero">
+            <div class="hero__inner">
+                <div class="hero__content">
+
+                    <h1 class="hero__title">Zaljubite se u Lonjsko Polje</h1>
+                    <p class="hero__body">Provedite prekrasno vrijeme na nasem imanju</p>
                 </div>
-                <!-- nav__menu -->
-
-                <div class="nav__social">
-                    <a href="#" class="nav__social-icon"><span class="fas fa-share-alt"></span></a>
-                    <a href="#" class="nav__social-icon"><span class="fas fa-code-branch"></span></a>
-                    <a href="#" class="nav__social-icon"><span class="fas fa-terminal"></span></a>
-                </div>
-                <!-- nav__social -->
-
             </div>
-            <!-- nav__content -->
-        </nav>
-        <!-- nav -->
-    </header>
-    <!-- header -->
 
-    <script src="./index.js"></script>
+        </div>
+
+        <main class="main" role="main">
+            <section class="section">
+                <article class="article">
+                    <div class="article__primary">
+                        <span class="article__intro">upoznajte imanje</span>
+                        <h2 class="article__title">selo strug</h2>
+                        <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde repellendus voluptatum ex cum eligendi corrupti optio sed impedit earum, laboriosam aperiam et, quisquam ullam expedita odio adipisci? Dignissimos, autem?</p>
+                        <a class="btn" href="#">saznaj vise</a>
+                    </div>
+                    <div class="article__secondary">
+                        <img class="article__photo" src="https://source.unsplash.com/random/v=01" alt="">
+                    </div>
+                </article>
+            </section>
+
+            <section class="section">
+                <article class="article">
+                    <div class="article__primary">
+                        <img class="article__photo" src="https://source.unsplash.com/random/v=02" alt="">
+                    </div>
+                    <div class="article__secondary">
+                        <span class="article__intro">krcma kod dida joze</span>
+                        <h2 class="article__title">restoran</h2>
+                        <p class="article__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto excepturi numquam cumque. Odit ipsum reprehenderit neque fugit officia perspiciatis modi sunt reiciendis aliquam recusandae voluptas pariatur, itaque placeat obcaecati.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section">
+                <article class="article">
+                    <div class="article__primary">
+                        <span class="article__intro">park prirode</span>
+                        <h2 class="article__title">lonjsko polje</h2>
+                        <p class="article__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima natus amet tempora praesentium debitis, nam quod quam nobis aspernatur sapiente, minus fugit? Tempora eum reiciendis saepe incidunt sed soluta.</p>
+                    </div>
+                    <div class="article__secondary--large">
+                        <img class="article__photo" src="https://source.unsplash.com/random/v=03" alt="">
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- footer to be done -->
+
+    </div>
+    <!-- /wrapper -->
 </body>
 
 </html>
