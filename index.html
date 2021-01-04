@@ -103,21 +103,19 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__top">
-
-                <div class="footer__contact">
+                <div class="footer__address">
                     <h3 class="footer__title">Selo Strug</h3>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <span class="footer__icon fas fa-home"></span>
+                            <span class="footer__icon--small fas fa-home"></span>
                             Plesmo 26, 44330 Novska
                         </li>
                         <li class="footer__item">
-                            <span class="footer__icon fas fa-phone"></span>
+                            <span class="footer__icon--small fas fa-phone"></span>
                             +385 91 6006 378
                         </li>
                         <li class="footer__item">
-                            <span class="footer__icon far fa-envelope"></span>
+                            <span class="footer__icon--small far fa-envelope"></span>
                             info@ekoetno-selo-strug.hr
                         </li>
                     </ul>
@@ -131,20 +129,35 @@
                         <li class="footer__item">TZ Sisacko Moslovacke zupanije</li>
                     </ul>
                 </div>
-                <div class="footer__form--ctn">
-                    <form class="footer__form" action="">
-                        <p class="footer__title--small">Posalji poruku</p>
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <button type="submit">posalji</button>
-                    </form>
-                </div>
+
+                <form class="footer__form" action="">
+                    <p class="footer__title  footer__title--grid">
+                        <span class="footer__icon--large far fa-comment-dots"></span>
+                        Posalji poruku
+                    </p>
+                    <label for="person-name"></label>
+                    <input class="footer__input" type="text" id="person-name" placeholder="ime" name="person-name">
+
+                    <label for="email"></label>
+                    <input class="footer__input" type="email" id="email" placeholder="email" name="email">
+
+                    <label for="subject"></label>
+                    <textarea
+                        class="footer__input"
+                        type="text"
+                        id="subject"
+                        placeholder="tvoja poruka.."
+                        spellcheck="false">
+                    </textarea>
+
+                    <button class="btn btn--form" type="submit">posalji</button>
+                </form>
+
+            <div class="footer__social">
+                <span class="footer__icon--social fab fa-facebook-f"></span>
+                <span class="footer__icon--social fab fa-instagram"></span>
             </div>
-            <div class="footer__bot">
-                <span class="footer__social fab fa-facebook-f"></span>
-                <span class="footer__social fab fa-instagram"></span>
-            </div>
+
             <p class="footer__copyright">Copyright © 2020. Selo Strug. All Rights Reserved.</p>
         </footer>
 
