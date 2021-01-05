@@ -50,7 +50,9 @@ body {
     margin-bottom: 0;
 }
 
-/* main */
+/* ====================
+main
+==================== */
 
 .main,
 .footer {
@@ -59,7 +61,7 @@ body {
     /* border: 1px solid black; */
 }
 
-/* section */
+/* sections */
 
 .section {
     padding: 5rem 0;
@@ -108,6 +110,39 @@ body {
     grid-column: 1 / -1;
 }
 
+/* reviews */
+
+.reviews {
+    padding: 10rem 5rem;
+    /* margin-top: 10rem; */
+    /* margin-bottom: 20rem; */
+    background: #f8f9fa;
+
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+}
+
+.reviews__title {
+    grid-column: 1 / -1;
+    margin-bottom: 2em;
+    /* font-size: */
+}
+
+.review {
+    position: relative;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 3rem;
+    background: #e8eef2;
+}
+
+.review__user {
+    position: absolute;
+    bottom: -3rem;
+}
+
 /* ====================
 footer
 ==================== */
@@ -115,19 +150,29 @@ footer
 .footer {
     display: grid;
     row-gap: 8rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
+/*
 .footer__address,
 .footer__links {
+    border: 1px solid black;
+    background: lightblue;
+    height: 300px;
     display: grid;
     align-content: center;
 }
+*/
 
-[class*='footer__title'] {
-    margin-bottom: 1.75rem;
+.footer__contact {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    align-content: center;
+    align-items: center;
 }
 
 .footer__social,
@@ -138,17 +183,43 @@ footer
 
 .footer__item {
     margin-bottom: 2em;
+    font-size: 0.95rem;
+    /* border-bottom: 1px solid black; */
+}
+
+.footer__link {
+    color: #333;
+    text-decoration: underline;
+}
+
+.footer__link:hover {
+    color: #629677;
+}
+
+.footer__link--icon {
+    font-size: 0.65rem;
+    margin-right: 0.3rem;
+}
+
+.footer__title--bold {
+    font-weight: 900;
+}
+
+[class*='footer__title'] {
+    margin-bottom: 0;
 }
 
 /* footer -> form */
 
 .footer__form {
-    background: #635380;
     background: linear-gradient(
         135deg,
         rgba(99, 83, 128, 1) 0%,
         rgba(125, 107, 158, 1) 100%
     );
+    /* background: #626267;
+    background: #596475; */
+
     padding: 1.25em;
     color: white;
     border-radius: 20px;
@@ -175,6 +246,7 @@ footer
     column-gap: 0.75rem;
     grid-template-columns: auto 1fr;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .footer__form input {
