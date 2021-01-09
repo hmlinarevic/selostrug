@@ -110,39 +110,6 @@ main
     grid-column: 1 / -1;
 }
 
-/* reviews */
-
-.reviews {
-    padding: 10rem 5rem;
-    /* margin-top: 10rem; */
-    /* margin-bottom: 20rem; */
-    background: #f8f9fa;
-
-    display: grid;
-    column-gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 10px;
-}
-
-.reviews__title {
-    grid-column: 1 / -1;
-    margin-bottom: 2em;
-    /* font-size: */
-}
-
-.review {
-    position: relative;
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    padding: 3rem;
-    background: #e8eef2;
-}
-
-.review__user {
-    position: absolute;
-    bottom: -3rem;
-}
-
 /* ====================
 footer
 ==================== */
