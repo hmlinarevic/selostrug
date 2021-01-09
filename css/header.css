@@ -25,6 +25,16 @@
     cursor: pointer;
 }
 
+.nav__btn--cta {
+    /* border: 1px solid black; */
+    display: grid;
+    align-items: center;
+    background: #333;
+    color: #f8f9fa;
+    padding: 0 1em;
+    border-radius: 5px;
+}
+
 /* nav */
 
 @media (max-width: 768px) {
