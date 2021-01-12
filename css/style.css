@@ -22,7 +22,7 @@
 
 .header__toggle {
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -87,19 +87,20 @@
 }
 
 .nav__img img {
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 32px;
 }
 
 .nav__name {
     display: block;
-    font-family: 'Itim', cursive;
-    font-size: 1.25rem;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1rem;
     color: var(--white-color);
 }
 
 .nav__tag {
     font-size: var(--small-font-size);
+    /* text-transform: uppercase; */
 }
 
 .nav__menu {
@@ -111,7 +112,7 @@
 }
 
 .nav__link {
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 
 .nav__social {
