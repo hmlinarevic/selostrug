@@ -185,8 +185,9 @@
     }
 
     .nav__img img {
+        margin-top: -1.15rem;
         width: 48px;
-        height: 48px;
+        height: 28px;
     }
 
     .nav__list {
@@ -236,19 +237,15 @@ main codes
 
 .hero {
     min-height: calc(50vh - var(--header-height));
-    background: url('../assets/photos/web/john.jpg');
-    background-color: #eaebeb;
-    background-blend-mode: darken;
+    background: url('../assets/photos/o.jpg');
+    background-color: #c2c2c2;
+    /* background-blend-mode: darken; */
     background-size: cover;
-    background-position: 10% 50%;
+    background-position: 20% 30%;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 /* main */
-
-.main {
-    padding: 0 30px;
-}
 
 /* intro */
 
@@ -258,6 +255,7 @@ main codes
     place-content: center;
     text-align: center;
     color: #333;
+    padding: 0 30px;
 }
 .intro .title {
     margin-bottom: 0;
@@ -274,4 +272,36 @@ main codes
 
 .intro .subtitle {
     margin-bottom: 0.25em;
+}
+
+/* landscape */
+
+.landscape {
+    height: calc(100vh - var(--header-height));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.landscape__text {
+    display: grid;
+    place-content: center;
+    padding: 0 30px;
+}
+
+.landscape__text p {
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.landscape img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 720px) {
+    .main {
+        max-width: 720px;
+        margin: 0 auto;
+    }
 }
