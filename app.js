@@ -22,3 +22,7 @@ function linkAction() {
 }
 
 navLink.forEach((link) => link.addEventListener('click', linkAction));
+
+const sayHi = () => {
+    console.log('hello!');
+};
