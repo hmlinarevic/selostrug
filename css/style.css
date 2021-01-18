@@ -307,6 +307,10 @@
     color: var(--white-color);
 }
 
+.card__btn:hover {
+    background-color: #6c719d;
+}
+
 @media (min-width: 600px) {
     .cards {
         display: grid;
