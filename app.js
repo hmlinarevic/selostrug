@@ -26,3 +26,7 @@ navLink.forEach((link) => link.addEventListener('click', linkAction));
 const sayHi = () => {
     console.log('hello!');
 };
+
+const sayBi = () => {
+    console.log('bye!');
+};
