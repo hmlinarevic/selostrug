@@ -1,7 +1,7 @@
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    /* border: 4px solid var(--dark-color); */
+    /* border: 2px solid var(--dark-color); */
     background: var(--white-color);
 }
 
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 250ms;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -264,71 +265,46 @@
     }
 }
 
-/* page */
-
-.page {
-}
-
-/* intro */
+/* === INTRO === */
 
 .intro {
     height: calc(100vh - (50vh - var(--header-height)) - var(--header-height));
-    text-align: center;
     color: #333;
     display: grid;
-    align-items: center;
-    /* background: url('../assets/vectors/floral.png'); */
-    /* background-size: 100px; */
-    /* background-position: 50% 18%; */
-
-    /* background-repeat: no-repeat; */
-    /* margin-bottom: 50vh; */
-    margin: 8rem 0;
-}
-
-@media (min-width: 800px) {
-    .intro {
-        /* height: 75vh; */
-
-        /* flower */
-        background-size: 200px;
-        background-position: 50% 20%;
-    }
-}
-
-.intro__content {
-    padding: 5rem 0;
-    display: grid;
+    row-gap: 1rem;
     place-content: center;
+    place-items: center;
+    text-align: center;
+}
 
-    /* background: #f2f4f7; */
+@media (min-width: 1000px) {
+    .intro {
+        height: auto;
+        row-gap: 2.5rem;
+
+        margin: 20vh 0;
+    }
 }
 
 .intro .title {
     margin-bottom: 0;
 }
 
-/* line under title */
-/* .intro .title::after {
-    display: flex;
-    content: '';
-    height: 1px;
-    width: 50px;
-    background-color: #a1a1a1;
-    margin: 1em auto;
-} */
-
 .intro .subtitle {
     margin-bottom: 0.25em;
 }
 
 .intro__img--flower {
-    width: 150px;
-    /* border: 1px solid black; */
-    margin: 2.5rem auto;
+    width: 60px;
 }
 
-/* cards */
+@media (min-width: 800px) {
+    .intro__img--flower {
+        width: 120px;
+    }
+}
+
+/* === CARDS === */
 
 .cards {
     display: grid;

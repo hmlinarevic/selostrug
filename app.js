@@ -23,10 +23,22 @@ function linkAction() {
 
 navLink.forEach((link) => link.addEventListener('click', linkAction));
 
-const sayHi = () => {
-    console.log('hello!');
+// minimize header
+
+const header = document.querySelector('.header');
+console.log(document.body.scrollTop);
+
+window.onscroll = function () {
+    scrollFunction();
 };
 
-const sayBi = () => {
-    console.log('bye!');
-};
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+    ) {
+        header.style.height = 'var(--header-height)';
+    } else {
+        header.style.height = '5rem';
+    }
+}
