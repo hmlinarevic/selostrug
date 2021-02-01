@@ -10,6 +10,9 @@
     --white-color: #f7f8fa;
 
     /* typography */
+    --body-font: 'Po', sans-serif;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
 
     /* z-index */
     --z-fixed: 100;
