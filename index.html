@@ -7,7 +7,7 @@
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
         <!-- fontawsome -->
@@ -24,135 +24,29 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <header class="header">
-                <a class="header__logo" href="#">SELO STRUG</a>
-                <span class="header__toggle fas fa-bars" id="toggle-nav"></span>
-                <nav class="nav" id="navigation">
-                    <div class="nav__content--grid">
-                        <span
-                            class="nav__close fas fa-times"
-                            id="close-nav"
-                        ></span>
-                        <div class="nav__profile">
-                            <div class="nav__img">
-                                <img
-                                    class="logo"
-                                    src="./assets/logo/logo.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div>
-                                <a class="nav__name" href="#">SELO STRUG</a>
-                                <span class="nav__tag">Imanje i Restoran</span>
-                            </div>
-                        </div>
-                        <div class="nav__menu">
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link active"
-                                        >restoran</a
-                                    >
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">smjestaj</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">aktivnosti</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="nav__btn--cta" href="./contact.html"
-                            >kontakt</a
-                        >
-                    </div>
+        <header class="header">
+            <div class="header__content">
+                <span class="header__logo">Selo Strug</span>
+                <nav class="nav">
+                    <span class="ico--burger fas fa-bars"></span>
                 </nav>
-            </header>
-
-            <div class="hero"></div>
-
-            <main class="page">
-                <div class="intro">
-                    <div class="intro__top">
-                        <span class="subtitle">Upoznaj Lonjsko Polje</span>
-                        <h2 class="title title--cursive">Selo Strug</h2>
-                    </div>
-                    <img
-                        class="intro__img--flower"
-                        src="./assets/vectors/floral.png"
-                        alt=""
-                    />
-                    <div class="intro__bot">
-                        <p class="text--light--italic">
-                            Okruži se ljepotama jedinstvene prirode
-                        </p>
-                        <p class="text--light--italic">
-                            Provedi vikend u stoljetnim hrastovim kućama
-                        </p>
-                        <p class="text--light--italic">
-                            Uživaj u gastronomskim delicijama ovoga kraja
-                        </p>
-                    </div>
-                </div>
-
-                <section class="cards">
-                    <div class="card card--large">
-                        <img
-                            class="card__img"
-                            src="./assets/photos/pa.jpg"
-                            alt=""
-                        />
-                        <h2 class="card__title">
-                            Odusevi se predivnim krajolicima
-                        </h2>
-                        <p class="card__text">
-                            Opustite se uz čarobne prizore seoske idile. Selo
-                            Strug nalazi se u srcu Posavine, na rječici
-                            Strug.Idealan je smještaj za turiste željne odmora u
-                            oazi mira, tišine i prirodnih ljepota.
-                        </p>
-                        <a href="#" class="btn card__btn">saznaj vise</a>
-                    </div>
-
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./assets/photos/aa.jpg"
-                            alt=""
-                        />
-                        <h2 class="card__title">
-                            Odmori svoje tijelo u drvenoj hrastovoj kuci
-                        </h2>
-                        <p class="card__text">
-                            Opustite se uz čarobne prizore seoske idile. Selo
-                            Strug nalazi se u srcu Posavine, na rječici
-                            Strug.Idealan je smještaj za turiste željne odmora u
-                            oazi mira, tišine i prirodnih ljepota.
-                        </p>
-                        <a href="#" class="btn card__btn">saznaj vise</a>
-                    </div>
-
-                    <div class="card">
-                        <img
-                            class="card__img"
-                            src="./assets/photos/ga.jpg"
-                            alt=""
-                        />
-                        <h2 class="card__title">
-                            Uzivaj u posavskim delicijama
-                        </h2>
-
-                        <p class="card__text">
-                            U nasem restoranu mozete uzivati u jelima poput
-                            smuda na rostilju, jelena u umaku od brusnica, krem
-                            juhicama i vrhunskim bakinim palacinkama.
-                        </p>
-                        <a href="#" class="btn card__btn">saznaj vise</a>
-                    </div>
-                </section>
-            </main>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="hero__photo">
+                <!-- <img class="img" src="./assets/photos/thegirl.jpg" alt="" /> -->
+            </div>
+            <div class="hero__text">
+                <h1>
+                    Upoznaj<br />
+                    <span class="text--highlight">Lonjsko Polje</span>
+                </h1>
+                <p>Okruži se ljepotama jedinstvene prirode.</p>
+                <button class="btn hero--btn">
+                    saznaj više <span class="fas fa-angle-down"></span>
+                </button>
+            </div>
         </div>
-        <!-- /wrapper -->
-        <script src="./app.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>
