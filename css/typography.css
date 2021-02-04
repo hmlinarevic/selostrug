@@ -1,0 +1,38 @@
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+/* elements */
+
+.hero h1 {
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: .85rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+
+}
+
+/* divs */
+
+.hero__text {
+    text-align: center;
+}
+
+/* accent */
+
+.text--highlight {
+    color: var(--accent-color);
+}
+
+/* icons */
+
+.ico--burger {
+    font-size: 1.25rem;
+}
