@@ -5,10 +5,8 @@ h1, h2, h3, p {
 /* elements */
 
 .hero h1 {
-
     font-size: 2.25rem;
     font-weight: 700;
-    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -16,7 +14,6 @@ h1, h2, h3, p {
     font-size: .85rem;
     font-weight: 300;
     margin-bottom: 2rem;
-
 }
 
 /* divs */
@@ -32,7 +29,3 @@ h1, h2, h3, p {
 }
 
 /* icons */
-
-.ico--burger {
-    font-size: 1.25rem;
-}

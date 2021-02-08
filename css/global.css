@@ -1,9 +1,12 @@
 :root {
     /* colors */
-    --primary-color: #424a26;
+    --dark-green-color: #2A3019;
+    --green-color: #424A26;
+    --light-green-color: #C6C9BE;
+    --light-white-color: #EFF0EA;
     --accent-color: #A47E4F;
     --white-color: #f8f9fa;
-    --black-lighter-color: #333;
+    --black-color: #333;
 
     /* typography */
     --body-font: 'Poppins', sans-serif;
@@ -53,6 +56,10 @@ img {
 }
 
 /* button */
+
+button {
+    cursor: pointer;
+}
 
 .btn {
     padding: .5em 1.5em;
