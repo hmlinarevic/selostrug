@@ -5,7 +5,8 @@
 }
 
 /* ====================
-header */
+header
+==================== */
 
 .header {
     height: var(--header-height);
@@ -29,7 +30,9 @@ header */
 }
 
 /* ====================
-navigation */
+navigation
+==================== */
+
 
 .nav {
     /* border: 2px solid orange; */
@@ -54,7 +57,7 @@ navigation */
     top: var(--header-height);
     left: 0;
     right: 0;
-    /* height: 100vh; */
+    height: 100vh;
     height: calc(50vh - var(--header-height) + 2rem);
     text-align: center;
     opacity: .95;
@@ -185,4 +188,35 @@ navigation */
 /* arrow */
 .hero--btn span {
     margin-top: .6px;
+}
+
+/* ====================
+section about
+==================== */
+
+.about__title {
+    margin-top: 4rem;
+    background: #2A3019;
+    border: 1px solid black;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    padding: 2rem;
+}
+
+.about__title::before {
+    content: "";
+}
+
+.about__img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.title--small {
+    color: var(--accent-color);
+}
+
+.title--big {
+    color: var(--white-color);
 }
