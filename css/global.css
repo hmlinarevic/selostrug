@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    color: var(--black-lighter-color);
+    color: var(--black-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     margin: 0;
@@ -63,4 +63,11 @@ button {
 
 .btn {
     padding: .5em 1.5em;
+}
+
+/* stop scroll */
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }

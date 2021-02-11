@@ -1,7 +1,29 @@
-const navToggle = document.querySelector('#nav-toggle');
-const navContent = document.querySelector('.nav__content');
+const btnNavToggle = document.querySelector('#nav-toggle');
+const btnNavClose = document.querySelector('#nav-close');
+const navContent = document.querySelector('.nav__menu');
 
-navToggle.addEventListener('click', function () {
-    console.log('Good evening, lord Vader.');
-    navContent.classList.toggle('nav__content--show');
-});
+class App {
+    constructor() {
+        btnNavToggle.addEventListener('click', this.toggleNavMenu);
+        btnNavClose.addEventListener('click', this.closeNavMenu);
+        this.sayHi();
+    }
+
+    toggleNavMenu() {
+        navContent.classList.toggle('nav__menu--show');
+        // prevent scroll
+        document.body.classList.add('stop-scrolling');
+    }
+
+    closeNavMenu() {
+        navContent.classList.remove('nav__menu--show');
+        // allow scroll
+        document.body.classList.remove('stop-scrolling');
+    }
+
+    sayHi() {
+        console.log('hi there');
+    }
+}
+
+new App();
