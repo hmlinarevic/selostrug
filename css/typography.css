@@ -2,18 +2,68 @@ h1, h2, h3, p {
     margin-top: 0;
 }
 
-/* elements */
-
-.hero h1 {
+.hero__title {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero__subtitle {
     font-size: .85rem;
     font-weight: 300;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    .hero__title {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    .hero__btn {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .hero__title {
+        font-size: 3rem;
+    }
+}
+
+.title--big {
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--white-color);
+
+}
+
+.title--small {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: .85rem;
+    margin-bottom: .25em;
+    color: var(--accent-color);
+}
+
+@media (min-width: 900px) {
+    .title--big {
+        font-size: 2rem;
+    }
+}
+
+
+.about__text {
+    line-height: 2;
+    font-weight: 300;
 }
 
 /* divs */
