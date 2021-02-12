@@ -1,0 +1,21 @@
+/* colors */
+$dark-green-color: #2a3019;
+$green-color: #424a26;
+$light-green-color: #c6c9be;
+$light-white-color: #eff0ea;
+$accent-color: #a47e4f;
+$white-color: #f8f9fa;
+$black-color: #333;
+
+/* typography */
+$body-font: 'Poppins', sans-serif;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+
+/* layout */
+$header-height: 4rem;
+
+@media (min-width: 768px) {
+  $normal-font-size: 1rem;
+  $small-font-size: 0.875rem;
+}

@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Selo Strug</title>
-        <!-- favicon -->
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="./assets/vectors/flower_purple.png"
-        />
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- fontawsome -->
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-            crossorigin="anonymous"
-        />
-        <!-- css -->
-        <link rel="stylesheet" href="./css/typography.css" />
-        <link rel="stylesheet" href="./css/global.css" />
-        <link rel="stylesheet" href="./css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selo Strug</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/vectors/flower_purple.png"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawsome -->
+    <!-- check solution if the server is down, can't open/close nav menu -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- js -->
+    <script type="module" src="./script.js"></script>
+  </head>
 
-        <!-- js -->
-        <script type="module" src="./script.js"></script>
-    </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <span class="header__logo">Selo Strug</span>
 
-    <body>
-        <header class="header">
-            <div class="header__content">
-                <span class="header__logo">Selo Strug</span>
+        <nav class="nav">
+          <span
+            class="nav__bars--ico fas fa-bars"
+            id="nav-toggle"
+            aria-label="csc"
+          ></span>
 
-                <nav class="nav">
-                    <span
-                        class="nav__bars--ico fas fa-bars"
-                        id="nav-toggle"
-                    ></span>
+          <div class="nav__menu">
+            <span
+              class="nav__close--ico fas fa-times-circle"
+              id="nav-close"
+            ></span>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">novosti</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">restoran</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">smjestaj</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--contact" href="#">kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-                    <div class="nav__menu">
-                        <span
-                            class="nav__close--ico fas fa-times-circle"
-                            id="nav-close"
-                        ></span>
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">novosti</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">restoran</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="#">smjestaj</a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__link nav__link--contact" href="#"
-                                    >kontakt</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__photo"></div>
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Upoznaj<br />
+            <span class="text--highlight">Lonjsko Polje</span>
+          </h1>
+          <p class="hero__subtitle">Okruži se ljepotama jedinstvene prirode.</p>
+          <button class="btn hero__btn">
+            saznaj više <span class="fas fa-angle-down"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="section" id="section--about">
+        <div class="section__label">
+          <img
+            class="section__label-img"
+            src="./assets/vectors/branch.png"
+            alt=""
+          />
+          <div class="section__label-content">
+            <h2 class="section__label-title">
+              Provedi vikend u stoljetnim hrastovim kućama
+            </h2>
+          </div>
+        </div>
+
+        <div class="section__content">
+          <article class="article article--pull-up">
+            <div class="article__photo article__photo--ico-left">
+              <img src="./assets/photos/aa.jpg" alt="" />
             </div>
-        </header>
-
-        <section class="hero">
-            <div class="hero__content">
-                <div class="hero__photo"></div>
-                <div class="hero__text">
-                    <h1 class="hero__title">
-                        Upoznaj<br />
-                        <span class="text--highlight">Lonjsko Polje</span>
-                    </h1>
-                    <p class="hero__subtitle">
-                        Okruži se ljepotama jedinstvene prirode.
-                    </p>
-                    <button class="btn hero__btn">
-                        saznaj više <span class="fas fa-angle-down"></span>
-                    </button>
-                </div>
+            <p class="article__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cum
+              labore et. Inventore minima voluptas consequatur rerum. Ad porro
+              iusto commodi error tempore cum quod libero quibusdam sapiente
+              debitis, blanditiis deleniti sed hic sunt suscipit fugiat
+              voluptas, dolorem distinctio cupiditate!
+            </p>
+          </article>
+          <article class="article article--reverse">
+            <div class="article__photo article__photo--ico-right">
+              <img class="" src="./assets/photos/z1.jpg" alt="" />
             </div>
-        </section>
-
-        <main class="main">
-            <section class="section">
-                <div class="section__header">
-                    <div class="section__header--container">
-                        <div class="title">
-                            <h3 class="title--small">Selo Strug</h3>
-                            <h2 class="title--big">
-                                Provedi vikend u stoljetnim hrastovim kućama
-                            </h2>
-                        </div>
-                        <img
-                            class="section__header--img"
-                            src="./assets/vectors/branch.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <div class="section__container">
-                    <article class="article article--pull-up">
-                        <div class="article__photo article__photo--ico-left">
-                            <img src="./assets/photos/aa.jpg" alt="" />
-                        </div>
-                        <p class="article__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Eum cum labore et. Inventore minima voluptas
-                            consequatur rerum. Ad porro iusto commodi error
-                            tempore cum quod libero quibusdam sapiente debitis,
-                            blanditiis deleniti sed hic sunt suscipit fugiat
-                            voluptas, dolorem distinctio cupiditate!
-                        </p>
-                    </article>
-                    <article class="article article--reverse">
-                        <div class="article__photo article__photo--ico-right">
-                            <img class="" src="./assets/photos/z1.jpg" alt="" />
-                        </div>
-                        <p class="article__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Eum cum labore et. Inventore minima voluptas
-                            consequatur rerum. Ad porro iusto commodi error
-                            tempore cum quod libero quibusdam sapiente debitis,
-                            blanditiis deleniti sed hic sunt suscipit fugiat
-                            voluptas, dolorem distinctio cupiditate!
-                        </p>
-                    </article>
-                </div>
-            </section>
-        </main>
-    </body>
+            <p class="article__body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cum
+              labore et. Inventore minima voluptas consequatur rerum. Ad porro
+              iusto commodi error tempore cum quod libero quibusdam sapiente
+              debitis, blanditiis deleniti sed hic sunt suscipit fugiat
+              voluptas, dolorem distinctio cupiditate!
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
