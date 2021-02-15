@@ -1,0 +1,89 @@
+@media (max-width: 800px) {
+  .hero__content {
+    width: 100%;
+  }
+}
+
+.hero__content {
+  height: calc(100vh - #{$header-height});
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hero__photo {
+  // background-color: $primary-color;
+  background-color: #2e331a;
+  background-image: url('../assets/photos/thegirl.jpg');
+  background-size: cover;
+  background-position: 20% 50%;
+  background-blend-mode: lighten;
+  box-shadow: 0px 1px 1px 1px rgba(51, 51, 51, 0.15);
+}
+
+.hero__text {
+  display: grid;
+  place-content: center;
+}
+
+.hero__btn {
+  color: $accent-color;
+  background: none;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  box-shadow: 1px 1px 0px 0px rgba(51, 51, 51, 0.25);
+  display: grid;
+  column-gap: 6px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 0 auto;
+  transition: background-color 350ms;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background: $accent-color;
+  color: $white-color;
+}
+
+/* arrow vector*/
+.hero__btn span {
+  margin-top: 0.6px;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    background: url('../assets/vectors/background/autumn.png');
+    background-color: #f3f5f7;
+    background-blend-mode: overlay;
+  }
+
+  .hero__content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+  }
+
+  .hero__text {
+    order: -1;
+    justify-content: start;
+    text-align: left;
+  }
+
+  .hero__photo {
+    box-sizing: content-box;
+    border: 50px solid #f8f9fa;
+    border-radius: 25px;
+    height: 500px;
+  }
+
+  @media (max-width: 900px) {
+    .hero__photo {
+      border: 25px solid #f8f9fa;
+    }
+  }
+
+  .hero__btn {
+    margin: 0;
+    margin-right: auto;
+  }
+}
