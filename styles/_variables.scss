@@ -7,13 +7,18 @@ $accent-color: #a47e4f;
 $white-color: #f8f9fa;
 $black-color: #333;
 
+// colors new
+$color-1: #e7e2d6;
+$color-2: #46474f;
+$color-3: #ff5e5b;
+
 /* typography */
 $body-font: 'Poppins', sans-serif;
 $normal-font-size: 0.938rem;
 $small-font-size: 0.813rem;
 
 /* layout */
-$header-height: 4rem;
+$header-height: 12rem;
 
 @media (min-width: 768px) {
   $normal-font-size: 1rem;

@@ -1,0 +1,32 @@
+// @import '../mixins';
+
+section {
+  margin-bottom: 24rem;
+}
+
+// screen size === mobile
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+// screen size > 800px
+@media (min-width: 800px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.container--grid {
+  display: grid;
+  column-gap: 6rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container--flex-sb {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

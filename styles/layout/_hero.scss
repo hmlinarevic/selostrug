@@ -1,0 +1,43 @@
+.hero {
+  height: calc(100vh - #{$header-height});
+}
+
+.hero__btn {
+  color: $color-3;
+  border: 1px solid $color-3;
+  border-radius: 25px;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  .hero__background {
+    width: 100%;
+    background: $color-1;
+  }
+
+  // reset gap size
+  .hero .container--grid {
+    column-gap: 0rem;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero__btn {
+    padding: 1em 2em;
+    margin-right: auto;
+  }
+
+  .hero img {
+    border: 60px solid #f8f9fa;
+  }
+}

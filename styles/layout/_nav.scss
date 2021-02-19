@@ -41,9 +41,8 @@
 .nav__link {
   background: $white-color;
   color: $dark-green-color;
-  padding: 0.65em 1.35em;
+  padding: 1em 2em;
   border-radius: 25px;
-  font-size: 0.9rem;
   letter-spacing: 1px;
   transition: background-color 500ms ease;
 }
@@ -88,6 +87,6 @@
   }
 
   .nav__link--contact {
-    background: $accent-color;
+    background: $color-3;
   }
 }

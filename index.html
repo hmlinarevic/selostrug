@@ -32,7 +32,7 @@
 
   <body>
     <header class="header">
-      <div class="header__content">
+      <div class="container container--flex-sb">
         <span class="header__logo">Selo Strug</span>
 
         <nav class="nav">
@@ -67,66 +67,66 @@
     </header>
 
     <section class="hero">
-      <div class="hero__content">
-        <div class="hero__photo"></div>
-        <div class="hero__text">
-          <h1 class="hero__title">
-            Upoznaj<br />
-            <span class="text--highlight">Lonjsko Polje</span>
-          </h1>
-          <p class="hero__subtitle">Okruži se ljepotama jedinstvene prirode.</p>
-          <button class="btn hero__btn">
-            saznaj više <span class="fas fa-angle-down"></span>
-          </button>
+      <div class="hero__background">
+        <div class="container container--grid">
+          <!-- item 1 -->
+          <div class="hero__text">
+            <h1 class="hero__title">
+              Upoznaj<br />
+              <span class="text--highlight">Lonjsko Polje</span>
+            </h1>
+            <p class="hero__subtitle">
+              Okruži se ljepotama jedinstvene prirode.
+            </p>
+            <button class="btn hero__btn">
+              saznaj više <span class="fas fa-angle-down"></span>
+            </button>
+          </div>
+          <!-- item 2 -->
+          <img src="./assets/photos/thegirl.jpg" alt="" />
         </div>
       </div>
     </section>
 
-    <main class="main">
-      <section class="section" id="section--about">
-        <div class="section__label">
-          <!-- cleaner markup? maybe could do without parent content?  -->
-          <div class="section__label-content">
-            <h2 class="section__label-title">
-              Provedi vikend u stoljetnim hrastovim kućama
-            </h2>
-            <img
-              class="section__label-img"
-              src="./assets/vectors/branch.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="section__content">
-          <article class="article article--pull-up">
-            <div class="article__photo article__slider">
-              <img src="./assets/photos/aa.jpg" alt="" />
-              <button class="article__btn article__btn--left">
-                <span class="arrow arrow--left"></span>
-              </button>
+    <main class="main" role="main">
+      <section class="about" id="section--about">
+        <div class="container">
+          <article class="container--grid article">
+            <div class="article__label">
+              <span class="title--small">selo strug</span>
+              <h2 class="title--big">
+                Provedi vikend u stoljetnim hrastovim kućama
+              </h2>
             </div>
-            <p class="article__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cum
-              labore et. Inventore minima voluptas consequatur rerum. Ad porro
-              iusto commodi error tempore cum quod libero quibusdam sapiente
-              debitis, blanditiis deleniti sed hic sunt suscipit fugiat
-              voluptas, dolorem distinctio cupiditate!
-            </p>
-          </article>
-          <article class="article article--reverse">
-            <div class="article__photo article__slider">
-              <img class="" src="./assets/photos/z1.jpg" alt="" />
-              <button class="article__btn article__btn--right">
-                <span class="arrow arrow--right"></span>
-              </button>
+            <div class="article__piece">
+              <img
+                class="article__photo about__photo--1"
+                src="./assets/photos/aa.jpg"
+                alt=""
+              />
+              <p class="article__body about__body--1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia nostrum rem minus sapiente labore non dolores velit quia
+                earum doloribus ipsum eveniet unde quisquam, blanditiis
+                accusamus sint consequatur placeat facere. Aperiam laborum, quos
+                nemo necessitatibus earum sequi expedita nobis mollitia!
+              </p>
             </div>
-            <p class="article__body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cum
-              labore et. Inventore minima voluptas consequatur rerum. Ad porro
-              iusto commodi error tempore cum quod libero quibusdam sapiente
-              debitis, blanditiis deleniti sed hic sunt suscipit fugiat
-              voluptas, dolorem distinctio cupiditate!
-            </p>
+            <div class="article__piece">
+              <p class="article__body about__body--2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, corporis corrupti. Architecto ducimus repellendus
+                assumenda blanditiis consectetur corrupti aut, nihil officia
+                ipsam voluptatem quibusdam, et ea modi perferendis fugit
+                obcaecati, vero sint. Reprehenderit, aspernatur quisquam velit
+                ad tenetur in mollitia?
+              </p>
+              <img
+                class="article__photo about__photo--2"
+                src="./assets/photos/z1.jpg"
+                alt=""
+              />
+            </div>
           </article>
         </div>
       </section>
