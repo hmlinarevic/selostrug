@@ -3,14 +3,14 @@ $dark-green-color: #2a3019;
 $green-color: #424a26;
 $light-green-color: #c6c9be;
 $light-white-color: #eff0ea;
-$accent-color: #a47e4f;
+$color--accent: #a63d40;
 $white-color: #f8f9fa;
 $black-color: #333;
 
 // colors new
-$color-1: #e7e2d6;
-$color-2: #46474f;
-$color-3: #ff5e5b;
+$color-1: #354f52;
+$color-2: #b3a594;
+$color-3: #a63d40;
 
 /* typography */
 $body-font: 'Poppins', sans-serif;
@@ -18,7 +18,7 @@ $normal-font-size: 0.938rem;
 $small-font-size: 0.813rem;
 
 /* layout */
-$header-height: 12rem;
+$header-height: 8rem;
 
 @media (min-width: 768px) {
   $normal-font-size: 1rem;

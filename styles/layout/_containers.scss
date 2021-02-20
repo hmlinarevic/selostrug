@@ -1,7 +1,7 @@
 // @import '../mixins';
 
-section {
-  margin-bottom: 24rem;
+.wrapper {
+  min-width: 300px;
 }
 
 // screen size === mobile
@@ -21,7 +21,7 @@ section {
 .container--grid {
   display: grid;
   column-gap: 6rem;
-  grid-template-columns: 1fr 1fr;
+  // grid-template-columns: 1fr 1fr;
 }
 
 .container--flex-sb {

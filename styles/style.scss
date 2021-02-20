@@ -16,44 +16,6 @@
 }
 
 // to refactor
-.about {
-  padding: 24rem 0;
-  border: 1px solid black;
-  background: #f8f6ec;
-}
-
-.article {
-  row-gap: 6rem;
-}
-
-.article__label {
-  grid-column: 1 / -1;
-  max-width: 600px;
-}
-
-.article__photo {
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.article__body {
-  font-size: 1.65rem;
-  font-weight: 300;
-  line-height: 2.25;
-  margin: 0;
-}
-
-.about .title--small {
-  font-size: 1.25rem;
-  letter-spacing: 8px;
-}
-
-.article__piece {
-  display: grid;
-  row-gap: 6rem;
-}
-
-.title--big {
-  font-size: 4.5rem;
+.btn {
+  padding: 0.75em 2em;
 }
