@@ -7,28 +7,29 @@
   background: $color-2;
 }
 
-// reset hero img width
-.hero .container {
-  width: 100%;
-}
-
-.hero .container--grid {
-  height: inherit;
-  // height: 100%;
-  // border: 10px solid black;
-  grid-template-rows: 1fr 1fr;
+.hero {
+  // hero image full width
+  .container {
+    width: 100%;
+  }
+  .container--grid {
+    height: inherit;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .hero__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .hero__caption {
   order: 2;
   display: grid;
-  place-content: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -40,6 +41,9 @@
 
 @media (min-width: 800px) {
   .hero {
+    .container {
+      width: 80%;
+    }
     background: url('../../assets/photos/mossholder.jpg');
     background-repeat: no-repeat;
     background-size: cover;

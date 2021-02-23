@@ -5,12 +5,66 @@ body {
   font-size: $normal-font-size;
 }
 
+/* ====================
+TITLE
+==================== */
+
+.title--big {
+  font-weight: 400;
+  margin-bottom: 0;
+  color: $white-color;
+}
+
+@media (min-width: 900px) {
+  .title--big {
+    font-size: 4rem;
+    color: #333;
+  }
+}
+
+.title--small {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 0.85rem;
+  margin-bottom: 0.25em;
+  color: $color--accent;
+}
+
+.title--section {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.subtitle--section {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #f8f9fa;
+}
+
+/* ====================
+ARTICLE
+==================== */
+
+.article__body {
+  font-size: 2rem;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
 // header
 .header__logo {
   font-family: 'Lobster';
   font-weight: 400;
   font-size: 3rem;
   letter-spacing: 2px;
+}
+
+// nav
+.nav__link {
+  font-size: 1.25rem;
 }
 
 // hero
@@ -60,40 +114,12 @@ body {
   }
 }
 
-// nav
-.nav__link {
-  font-size: 1.25rem;
-}
-
-.title--big {
-  font-weight: 400;
-  margin-bottom: 0;
-  color: $white-color;
-}
-
-.title--small {
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 5px;
-  font-size: 0.85rem;
-  margin-bottom: 0.25em;
-  color: $color--accent;
-}
-
-@media (min-width: 900px) {
-  .title--big {
-    font-size: 4rem;
-    color: #333;
-  }
-}
-
 .about__text {
   line-height: 2;
   font-weight: 300;
 }
 
 // highlights
-
 .color--highlight {
   color: $color--accent;
 }

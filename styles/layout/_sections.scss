@@ -1,0 +1,26 @@
+.about {
+  background: $color-4;
+}
+
+/* ====================
+RESTAURANT
+==================== */
+
+.restaurant {
+  background: $color-5;
+  color: #f8f9fa;
+  @media (min-width: 800px) {
+    .section__caption-subtitle {
+      color: $color-4;
+    }
+    .article__photo {
+      height: 400px;
+      grid-column: 1 / -1;
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+/* ====================
+PARK
+==================== */

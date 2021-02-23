@@ -5,9 +5,10 @@
 
 // layout
 @import './layout/containers';
+@import './layout/sections';
 @import './layout/header';
-@import './layout/hero';
 @import './layout/nav';
+@import './layout/hero';
 
 // for js
 .stop-scrolling {
@@ -18,4 +19,55 @@
 // to refactor
 .btn {
   padding: 0.75em 2em;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 24rem 0;
+  margin-bottom: 24rem;
+}
+
+.section__caption-title {
+  margin-bottom: 6rem;
+  max-width: 700px;
+}
+
+.section__caption {
+  position: relative;
+}
+
+.section__caption {
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 3rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background: $color-5;
+  }
+}
+
+@media (min-width: 800px) {
+  .article.container--grid {
+    row-gap: 6rem;
+  }
+
+  .article__photo {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .article__block {
+    display: grid;
+    row-gap: 6rem;
+  }
+
+  .article__body {
+    margin: 0;
+  }
 }

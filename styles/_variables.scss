@@ -11,16 +11,19 @@ $black-color: #333;
 $color-1: #354f52;
 $color-2: #b3a594;
 $color-3: #a63d40;
+$color-4: #ad716a;
+$color-5: #403233;
 
 /* typography */
 $body-font: 'Poppins', sans-serif;
 $normal-font-size: 0.938rem;
 $small-font-size: 0.813rem;
 
-/* layout */
-$header-height: 8rem;
-
 @media (min-width: 768px) {
   $normal-font-size: 1rem;
   $small-font-size: 0.875rem;
 }
+
+/* layout */
+$header-height: 8rem;
+$width--container: 80%;
