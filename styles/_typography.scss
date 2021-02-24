@@ -32,7 +32,7 @@ TITLE
 }
 
 .title--section {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 700;
 }
 
@@ -67,17 +67,18 @@ ARTICLE
   font-size: 1.25rem;
 }
 
-// hero
+/* ====================
+HERO
+==================== */
+
 .hero__caption-title {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
 .hero__caption-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 3rem;
 }
 
 .hero__btn {
@@ -90,7 +91,6 @@ ARTICLE
   .hero__caption-title {
     font-size: 2.5rem;
     letter-spacing: 1px;
-    margin-bottom: 1.25rem;
   }
 
   .hero__caption-subtitle {
@@ -99,18 +99,23 @@ ARTICLE
   }
 
   .hero__btn {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 }
 
 @media (min-width: 1000px) {
   .hero__caption-title {
-    font-size: 4.25rem;
+    font-size: 6rem;
   }
 
   .hero__caption-subtitle {
-    font-size: 1.75rem;
+    font-size: 2rem;
+  }
+
+  .hero__btn {
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
 

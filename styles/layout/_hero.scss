@@ -41,6 +41,7 @@
 
 @media (min-width: 800px) {
   .hero {
+    padding: 4rem 0;
     .container {
       width: 80%;
     }
@@ -71,6 +72,14 @@
   .hero__caption {
     order: -1;
     text-align: left;
+  }
+
+  .hero__caption-title {
+    margin-bottom: 1rem;
+  }
+
+  .hero__caption-subtitle {
+    margin-bottom: 4rem;
   }
 
   .hero__btn {

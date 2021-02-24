@@ -87,7 +87,7 @@ TITLE
 }
 
 .title--section {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 700;
 }
 
@@ -119,16 +119,17 @@ ARTICLE
   font-size: 1.25rem;
 }
 
+/* ====================
+HERO
+==================== */
 .hero__caption-title {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
 .hero__caption-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 3rem;
 }
 
 .hero__btn {
@@ -141,24 +142,27 @@ ARTICLE
   .hero__caption-title {
     font-size: 2.5rem;
     letter-spacing: 1px;
-    margin-bottom: 1.25rem;
   }
   .hero__caption-subtitle {
     font-size: 1.25rem;
     font-weight: 300;
   }
   .hero__btn {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 }
 
 @media (min-width: 1000px) {
   .hero__caption-title {
-    font-size: 4.25rem;
+    font-size: 6rem;
   }
   .hero__caption-subtitle {
-    font-size: 1.75rem;
+    font-size: 2rem;
+  }
+  .hero__btn {
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
 
@@ -229,6 +233,57 @@ ARTICLE
   background: #ad716a;
 }
 
+.section {
+  min-height: 100vh;
+  padding: 24rem 0;
+  margin-bottom: 24rem;
+}
+
+.section__caption-title {
+  margin-bottom: 6rem;
+}
+
+.section__caption {
+  position: relative;
+}
+
+.section__caption::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 3rem;
+  height: 100%;
+  top: 0;
+  color: white;
+  background: #403233;
+}
+
+.about .section__caption::before {
+  left: 0;
+}
+
+@media (min-width: 800px) {
+  .article.container--grid {
+    row-gap: 6rem;
+  }
+  .article__photo {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+  .article__block {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 6rem;
+  }
+  .article__body {
+    margin: 0;
+  }
+}
+
 /* ====================
 RESTAURANT
 ==================== */
@@ -238,6 +293,10 @@ RESTAURANT
 }
 
 @media (min-width: 800px) {
+  .restaurant .section__caption::before {
+    background: #f8f9fa;
+    right: 0;
+  }
   .restaurant .section__caption-subtitle {
     color: #ad716a;
   }
@@ -251,6 +310,45 @@ RESTAURANT
 /* ====================
 PARK
 ==================== */
+.park {
+  background: #d6cfc7;
+}
+
+@media (min-width: 800px) {
+  .park {
+    position: relative;
+  }
+  .park .container--grid {
+    row-gap: 6rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .park .section__caption {
+    background: #f8f9fa;
+    border: 5px dashed #333;
+    position: relative;
+    left: 0;
+  }
+  .park .section__caption::before {
+    position: absolute;
+    left: -10px;
+  }
+  .park p {
+    font-size: 1.85rem;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  .park img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .header {
   height: 8rem;
   background: #354f52;
@@ -414,6 +512,7 @@ PARK
 
 @media (min-width: 800px) {
   .hero {
+    padding: 4rem 0;
     background: url("../../assets/photos/mossholder.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -448,6 +547,12 @@ PARK
             order: -1;
     text-align: left;
   }
+  .hero__caption-title {
+    margin-bottom: 1rem;
+  }
+  .hero__caption-subtitle {
+    margin-bottom: 4rem;
+  }
   .hero__btn {
     margin-left: 0;
   }
@@ -463,54 +568,5 @@ PARK
 
 .btn {
   padding: 0.75em 2em;
-}
-
-.section {
-  min-height: 100vh;
-  padding: 24rem 0;
-  margin-bottom: 24rem;
-}
-
-.section__caption-title {
-  margin-bottom: 6rem;
-  max-width: 700px;
-}
-
-.section__caption {
-  position: relative;
-}
-
-.section__caption::before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 3rem;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: white;
-  background: #403233;
-}
-
-@media (min-width: 800px) {
-  .article.container--grid {
-    row-gap: 6rem;
-  }
-  .article__photo {
-    width: 100%;
-    height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
-            box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
-  }
-  .article__block {
-    display: -ms-grid;
-    display: grid;
-    row-gap: 6rem;
-  }
-  .article__body {
-    margin: 0;
-  }
 }
 /*# sourceMappingURL=style.css.map */
