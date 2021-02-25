@@ -25,6 +25,15 @@ $small-font-size: 0.813rem;
   $small-font-size: 0.875rem;
 }
 
-/* layout */
+/* ====================
+LAYOUT
+==================== */
+
 $header-height: 8rem;
-$width--container: 80%;
+$width--container-80: 80%;
+$width--container-90: 90%;
+
+// section - park
+$img-height: 300px;
+
+$length: calc((100vw - 1000px) / 2);

@@ -53,7 +53,9 @@ button {
 
 /* colors */
 /* typography */
-/* layout */
+/* ====================
+LAYOUT
+==================== */
 body {
   background: #f8f9fa;
   color: #333;
@@ -229,37 +231,49 @@ HERO
           align-items: center;
 }
 
-.about {
-  background: #ad716a;
-}
-
 .section {
   min-height: 100vh;
-  padding: 24rem 0;
-  margin-bottom: 24rem;
 }
 
-.section__caption-title {
-  margin-bottom: 6rem;
+@media (min-width: 990px) {
+  .marker, .section__caption::before {
+    position: absolute;
+    content: '';
+    width: 3rem;
+    height: 100%;
+    top: 0;
+    background: #403233;
+  }
 }
 
 .section__caption {
   position: relative;
 }
 
-.section__caption::before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 3rem;
-  height: 100%;
-  top: 0;
-  color: white;
-  background: #403233;
+.section__caption-title {
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 800px) {
+  .section {
+    padding: 24rem 0;
+    margin-bottom: 24rem;
+  }
+  .section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* ====================
+ABOUT
+==================== */
+.about {
+  background: #ad716a;
 }
 
 .about .section__caption::before {
   left: 0;
+  background: #403233;
 }
 
 @media (min-width: 800px) {
@@ -315,26 +329,25 @@ PARK
 }
 
 @media (min-width: 800px) {
-  .park {
-    position: relative;
-  }
   .park .container--grid {
     row-gap: 6rem;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .park .section__caption {
-    background: #f8f9fa;
-    border: 5px dashed #333;
-    position: relative;
-    left: 0;
+    padding: 6rem;
+    position: static;
+    background: #ad716a;
   }
   .park .section__caption::before {
-    position: absolute;
-    left: -10px;
+    display: none;
+  }
+  .park .section__caption-title {
+    font-size: 6rem;
+    margin-bottom: 0;
+  }
+  .park .section__caption-subtitle {
+    color: #f8f9fa;
   }
   .park p {
     font-size: 1.85rem;
@@ -343,7 +356,7 @@ PARK
   }
   .park img {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -568,5 +581,21 @@ PARK
 
 .btn {
   padding: 0.75em 2em;
+}
+
+.box {
+  width: 90vw;
+}
+
+.flex--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
