@@ -62,9 +62,21 @@ ARTICLE
   letter-spacing: 2px;
 }
 
+@media (min-width: 800px) {
+  .header__logo {
+    font-size: 3.25rem;
+  }
+}
+
 // nav
 .nav__link {
   font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .nav__link {
+    font-size: 1.35rem;
+  }
 }
 
 /* ====================
@@ -84,7 +96,7 @@ HERO
 .hero__btn {
   font-size: 1.25rem;
   font-weight: 700;
-  color: $color-1;
+  color: $color-7;
 }
 
 @media (min-width: 800px) {
@@ -106,7 +118,7 @@ HERO
 
 @media (min-width: 1000px) {
   .hero__caption-title {
-    font-size: 6rem;
+    font-size: 5.25rem;
   }
 
   .hero__caption-subtitle {
@@ -114,7 +126,7 @@ HERO
   }
 
   .hero__btn {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 700;
   }
 }
@@ -126,5 +138,5 @@ HERO
 
 // highlights
 .color--highlight {
-  color: $color--accent;
+  color: $color-1;
 }

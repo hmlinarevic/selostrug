@@ -2,13 +2,15 @@
 @import './variables';
 @import './typography';
 @import './mixins';
+@import './other';
 
 // layout
-@import './layout/containers';
+@import './layout/control';
 @import './layout/sections';
 @import './layout/header';
 @import './layout/nav';
 @import './layout/hero';
+@import './layout/footer';
 
 // for js
 .stop-scrolling {
@@ -31,4 +33,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  background: #333;
 }

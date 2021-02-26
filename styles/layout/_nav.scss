@@ -42,7 +42,7 @@
   background: $white-color;
   color: $dark-green-color;
   padding: 1em 2em;
-  border-radius: 25px;
+  // border-radius: 25px;
   letter-spacing: 1px;
   transition: background-color 500ms ease;
 }
@@ -87,6 +87,7 @@
   }
 
   .nav__link--contact {
-    background: $color-3;
+    background: $color-7;
+    color: #333;
   }
 }

@@ -1,0 +1,37 @@
+.footer {
+  background: $color-5;
+  color: $color-7;
+}
+
+.footer__title {
+  color: rgba(255, 255, 255, 0.25);
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.footer__title--info {
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .footer__text {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    padding: 24rem 0;
+    .container {
+      border: 1px solid #f8f9fa;
+    }
+    .container--grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

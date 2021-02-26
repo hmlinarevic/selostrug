@@ -1,0 +1,18 @@
+.background--image {
+  background: url('../../assets/photos/web/mossholder1920.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  min-height: 20rem;
+}
+
+.background--image-1 {
+  background-position-y: 100%;
+}
+
+.background--image-2 {
+  background-position-y: 50%;
+}
+
+.background--image-3 {
+  background-position-y: 0%;
+}

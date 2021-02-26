@@ -34,19 +34,18 @@
 }
 
 .hero__btn {
-  border: 2px solid $color-1;
+  border: 2px solid $color-7;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 800px) {
   .hero {
-    padding: 4rem 0;
     .container {
       width: 80%;
     }
-    background: url('../../assets/photos/mossholder.jpg');
-    background-repeat: no-repeat;
+    background: url('../../assets/photos/web/mossholder2400.jpg');
+    background-repeat: repeat-y;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -65,13 +64,15 @@
   }
 
   .hero .container--grid {
-    grid-template-columns: 1fr 1fr;
+    column-gap: 10rem;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
   }
 
   .hero__caption {
     order: -1;
     text-align: left;
+    grid-column: span 2;
   }
 
   .hero__caption-title {
@@ -79,7 +80,7 @@
   }
 
   .hero__caption-subtitle {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .hero__btn {
@@ -87,6 +88,8 @@
   }
 
   .hero__img {
-    outline: 30px solid white;
+    height: 500px;
+    grid-column: span 2;
+    outline: 30px solid $color-7;
   }
 }
