@@ -28,8 +28,10 @@
 
 @media (min-width: 800px) {
   .section {
-    border-top: 10px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 10px solid rgba(0, 0, 0, 0.1);
+    // update for either top or bottom
+    // fix adding to the total height
+    border-top: 3rem solid rgba(255, 255, 255, 0.025);
+    border-bottom: 3rem solid rgba(255, 255, 255, 0.025);
 
     padding: 20rem 0;
   }
@@ -69,7 +71,7 @@ ABOUT
       object-fit: cover;
       filter: brightness(90%);
       // border: 2.5px solid #9e5e57;
-      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
     }
 
     .article__block {
@@ -105,7 +107,9 @@ RESTAURANT
       color: $color-4;
     }
     .article__photo {
-      height: 400px;
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
       grid-column: 1 / -1;
       margin-bottom: 6rem;
     }
@@ -125,6 +129,7 @@ PARK
     .container--grid {
       row-gap: 6rem;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
     }
 
     .section__caption {
