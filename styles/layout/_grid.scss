@@ -6,14 +6,19 @@
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
 .container--grid {
   display: grid;
-  column-gap: 10rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 6rem;
+  row-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+}
+
+.container--grid-col4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 // for header

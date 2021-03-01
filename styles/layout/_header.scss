@@ -14,10 +14,14 @@ HEADER
   color: $color-7;
   margin: 0 auto;
   border-bottom: 2px solid #283c3e;
+  // fixed header
+  // position: fixed;
+  // width: 100%;
+  // z-index: 100;
 }
 
 /* ====================
-NAVIGATION
+navigation
 ==================== */
 
 .nav__bars--ico {

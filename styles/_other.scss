@@ -1,3 +1,26 @@
+// button
+
+.btn {
+  // testing width relative to four column grid
+  // width: 50%;
+  max-width: 220px;
+  min-height: 6rem;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 2rem;
+}
+
+.section__btn {
+  @include flexCenter;
+  color: #333;
+}
+
+// section button icon
+.section__btn .fas {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
 // background between sections
 .background--image {
   background: url('../../assets/photos/web/mossholder1920.jpg');
