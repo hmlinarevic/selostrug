@@ -355,14 +355,8 @@ navigation
   color: #2a3019;
   padding: 1em 2em;
   letter-spacing: 1px;
-  -webkit-transition: background-color 500ms ease;
-  transition: background-color 500ms ease;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  background: #a63d40;
-  color: #f8f9fa;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
 }
 
 @media (min-width: 800px) {
