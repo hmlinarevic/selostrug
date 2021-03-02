@@ -4,9 +4,10 @@
 @import './mixins';
 
 // layout
-@import './layout/grid';
-@import './layout/header';
-@import './layout/hero';
+@import './layout/containers';
+@import './layout/header/header';
+@import './layout/header/navigation';
+@import './layout/header/hero';
 @import './layout/sections';
 @import './layout/footer';
 
@@ -14,9 +15,6 @@
 @import './other';
 
 // to refactor
-.btn {
-  padding: 0.75em 2em;
-}
 
 // test
 .box {

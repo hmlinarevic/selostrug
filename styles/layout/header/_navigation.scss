@@ -1,29 +1,18 @@
 /* ====================
-HEADER
+NAVIGATION
 ==================== */
 
-.header {
-  // background: $color-1;
-  position: absolute;
-  height: $header-height;
-  top: 0;
-  left: 0;
-  right: 0;
+.nav {
   background: rgb(53, 79, 82);
   background: linear-gradient(
     90deg,
     rgba(53, 79, 82, 1) 0%,
     rgba(40, 60, 62, 1) 100%
   );
-  color: $color-7;
-  margin: 0 auto;
   border-bottom: 2px solid #283c3e;
-  z-index: 100;
-}
 
-/* ====================
-navigation
-==================== */
+  height: $nav-height;
+}
 
 .nav__bars--ico {
   font-size: 1.25rem;

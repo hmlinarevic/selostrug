@@ -47,6 +47,7 @@ class App {
   handleNavLinks(e) {
     e.preventDefault();
     if (e.target.classList.contains('nav__link')) {
+      // need fix for home link
       const id = e.target.getAttribute('href');
       document.querySelector(`${id}`).scrollIntoView({ behavior: 'smooth' });
     }
@@ -59,25 +60,25 @@ class App {
 new App();
 
 // Intersection Observer
-const headerHeight = header.getBoundingClientRect().height;
-const stickyNav = function (entries) {
-  entries.forEach((entry) => {
-    // console.log(entry);
-    // try setInterval
-    if (!entry.isIntersecting) {
-      header.classList.add('sticky');
-      console.log('yay');
-    } else header.classList.remove('sticky');
-  });
-};
+// const headerHeight = header.getBoundingClientRect().height;
+// const stickyNav = function (entries) {
+//   entries.forEach((entry) => {
+//     // console.log(entry);
+//     // try setInterval
+//     if (!entry.isIntersecting) {
+//       header.classList.add('sticky');
+//       console.log('yay');
+//     } else header.classList.remove('sticky');
+//   });
+// };
 
-const heroObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  treshold: 0,
-  rootMargin: `-${headerHeight}px`,
-});
+// const heroObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   treshold: 0,
+//   rootMargin: `-${headerHeight}px`,
+// });
 
-heroObserver.observe(hero);
+// heroObserver.observe(hero);
 
 // Scrolling to section
 btnScroll.addEventListener('click', function () {

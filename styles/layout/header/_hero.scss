@@ -1,6 +1,9 @@
+/* ====================
+HERO
+==================== */
+
 .hero {
-  margin-top: $header-height;
-  height: calc(100vh - #{$header-height});
+  height: calc(100% - #{$nav-height});
 }
 
 .hero__content {
@@ -8,15 +11,15 @@
   background: $color-2;
 }
 
+// hero containers
 .hero {
   // hero image full width
   .container {
     width: 100%;
   }
   .container--grid {
-    height: inherit;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    grid-template-rows: 1.25fr 1fr;
   }
 }
 
@@ -24,14 +27,37 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid #283c3e;
+}
+
+// fix girl image
+@media (min-width: 500px) {
+  .hero {
+    .container--test {
+      grid-template-rows: 1.5fr 1fr;
+    }
+    .hero__img {
+      object-position: 50% 40%;
+    }
+  }
 }
 
 .hero__caption {
+  height: 100%;
   order: 2;
   display: grid;
   align-content: center;
   text-align: center;
+}
+
+.hero__caption-title {
+  margin-bottom: 1rem;
+}
+
+.hero__caption-subtitle {
+  margin-bottom: 2rem;
 }
 
 .hero__btn {

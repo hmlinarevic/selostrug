@@ -34,10 +34,9 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container container--flex-sb">
-          <span class="header__logo">Selo Strug</span>
-
-          <nav class="nav">
+        <nav class="nav">
+          <div class="container container--flex-sb">
+            <span class="nav__logo">Selo Strug</span>
             <span
               class="nav__bars--ico fas fa-bars"
               id="nav-toggle"
@@ -64,34 +63,36 @@
                 </li>
               </ul>
             </div>
-          </nav>
-        </div>
-      </header>
-
-      <section class="hero">
-        <div class="hero__content">
-          <div class="container container--grid">
-            <div class="hero__caption">
-              <h1 class="hero__caption-title">
-                Upoznaj<br />
-                <span class="color--highlight">Lonjsko Polje</span>
-              </h1>
-              <p class="hero__caption-subtitle">
-                Okruži se ljepotama jedinstvene prirode.
-              </p>
-              <button class="btn hero__btn" id="btn--scroll-to">
-                saznaj više
-                <span class="fas fa-angle-down"></span>
-              </button>
-            </div>
-            <img
-              class="hero__img"
-              src="./assets/photos/thegirl.jpg"
-              alt="girl in the field in a traditional white dress"
-            />
           </div>
-        </div>
-      </section>
+        </nav>
+        <section class="hero">
+          <div class="hero__content">
+            <div class="container container--grid">
+              <!-- hero caption -->
+              <div class="hero__caption">
+                <h1 class="hero__caption-title">
+                  Upoznaj<br />
+                  <span class="color--highlight">Lonjsko Polje</span>
+                </h1>
+                <p class="hero__caption-subtitle">
+                  Okruži se ljepotama jedinstvene prirode.
+                </p>
+                <button class="btn hero__btn" id="btn--scroll-to">
+                  saznaj više
+                  <span class="fas fa-angle-down"></span>
+                </button>
+              </div>
+              <!-- hero img -->
+              <!-- <div class="hero__photo"></div> -->
+              <img
+                class="hero__img"
+                src="./assets/photos/thegirl.jpg"
+                alt="girl in the field in a traditional white dress"
+              />
+            </div>
+          </div>
+        </section>
+      </header>
 
       <main class="main" role="main">
         <!-- about -->

@@ -54,21 +54,22 @@ ARTICLE
   font-weight: 300;
 }
 
-// header
-.header__logo {
-  font-family: 'Lobster';
-  font-weight: 400;
-  font-size: 3rem;
-  letter-spacing: 2px;
-}
-
 @media (min-width: 800px) {
   .header__logo {
     font-size: 3.25rem;
   }
 }
 
-// nav
+/* ====================
+NAVIGATION
+==================== */
+.nav__logo {
+  font-family: 'Lobster';
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
 .nav__link {
   font-size: 1.25rem;
 }

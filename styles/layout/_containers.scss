@@ -1,7 +1,6 @@
 .wrapper {
   min-width: 300px;
   margin: 0 auto;
-  // box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -10,18 +9,16 @@
   margin: 0 auto;
 }
 
+// container grid
 .container--grid {
   display: grid;
-  column-gap: 6rem;
-  row-gap: 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
 }
 
 .container--grid-col4 {
   grid-template-columns: repeat(4, 1fr);
 }
 
-// for header
+// container flex
 .container--flex-sb {
   height: 100%;
   display: flex;
@@ -29,8 +26,15 @@
   align-items: center;
 }
 
+// container on larger screen size
 @media (min-width: 800px) {
   .container {
     width: 80%;
+  }
+
+  .container--grid {
+    column-gap: 6rem;
+    row-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   }
 }
