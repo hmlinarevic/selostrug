@@ -2,7 +2,6 @@
 @import './variables';
 @import './typography';
 @import './mixins';
-@import './other';
 
 // layout
 @import './layout/grid';
@@ -11,11 +10,8 @@
 @import './layout/sections';
 @import './layout/footer';
 
-// for js
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
+// other
+@import './other';
 
 // to refactor
 .btn {

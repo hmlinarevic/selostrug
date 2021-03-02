@@ -1,5 +1,4 @@
 // button
-
 .btn {
   // testing width relative to four column grid
   // width: 50%;
@@ -39,4 +38,14 @@
 
 .background--image-3 {
   background-position-y: 0%;
+}
+
+// for javascript
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
 }

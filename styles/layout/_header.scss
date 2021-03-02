@@ -3,8 +3,12 @@ HEADER
 ==================== */
 
 .header {
-  height: $header-height;
   // background: $color-1;
+  position: absolute;
+  height: $header-height;
+  top: 0;
+  left: 0;
+  right: 0;
   background: rgb(53, 79, 82);
   background: linear-gradient(
     90deg,
@@ -14,10 +18,7 @@ HEADER
   color: $color-7;
   margin: 0 auto;
   border-bottom: 2px solid #283c3e;
-  // fixed header
-  // position: fixed;
-  // width: 100%;
-  // z-index: 100;
+  z-index: 100;
 }
 
 /* ====================

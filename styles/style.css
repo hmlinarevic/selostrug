@@ -190,51 +190,6 @@ HERO
   color: #354f52;
 }
 
-.btn {
-  max-width: 220px;
-  min-height: 6rem;
-  border-width: 2px;
-  border-style: solid;
-  font-size: 2rem;
-}
-
-.section__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #333;
-}
-
-.section__btn .fas {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
-.background--image {
-  background: url("../../assets/photos/web/mossholder1920.jpg");
-  background-size: cover;
-  background-repeat: repeat-y;
-  min-height: 20rem;
-}
-
-.background--image-1 {
-  background-position-y: 100%;
-}
-
-.background--image-2 {
-  background-position-y: 50%;
-}
-
-.background--image-3 {
-  background-position-y: 0%;
-}
-
 .wrapper {
   min-width: 300px;
   margin: 0 auto;
@@ -284,13 +239,18 @@ HERO
 HEADER
 ==================== */
 .header {
+  position: absolute;
   height: 10rem;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #354f52;
   background: -webkit-gradient(linear, left top, right top, from(#354f52), to(#283c3e));
   background: linear-gradient(90deg, #354f52 0%, #283c3e 100%);
   color: #f8f6ec;
   margin: 0 auto;
   border-bottom: 2px solid #283c3e;
+  z-index: 100;
 }
 
 /* ====================
@@ -398,6 +358,7 @@ navigation
 }
 
 .hero {
+  margin-top: 10rem;
   height: calc(100vh - 10rem);
 }
 
@@ -713,9 +674,58 @@ PARK
   }
 }
 
+.btn {
+  max-width: 220px;
+  min-height: 6rem;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 2rem;
+}
+
+.section__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+.section__btn .fas {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.background--image {
+  background: url("../../assets/photos/web/mossholder1920.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  min-height: 20rem;
+}
+
+.background--image-1 {
+  background-position-y: 100%;
+}
+
+.background--image-2 {
+  background-position-y: 50%;
+}
+
+.background--image-3 {
+  background-position-y: 0%;
+}
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
 }
 
 .btn {
