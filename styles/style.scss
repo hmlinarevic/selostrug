@@ -5,22 +5,14 @@
 
 // layout
 @import './layout/containers';
-@import './layout/header/header';
-@import './layout/header/navigation';
-@import './layout/header/hero';
+@import './layout/header';
+@import './layout/nav';
+@import './layout/hero';
 @import './layout/sections';
 @import './layout/footer';
 
 // other
 @import './other';
-
-// to refactor
-
-// test
-.box {
-  width: 90vw;
-  // margin: 0 auto;
-}
 
 .flex--center {
   display: flex;

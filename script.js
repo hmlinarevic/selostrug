@@ -12,10 +12,13 @@ class App {
   constructor() {
     btnNavToggle.addEventListener('click', this.toggleNavMenu);
     btnNavClose.addEventListener('click', this.closeNavMenu);
+    btnScroll.addEventListener('click', this.scrollToSection);
+
     nav.addEventListener('mouseover', this.handleHover.bind(0.1));
     nav.addEventListener('mouseout', this.handleHover.bind(1));
-    navList.addEventListener('click', this.handleNavLinks);
+    nav.addEventListener('click', this.handleNavLinks);
 
+    this.observeNav();
     this.sayHi();
   }
 
@@ -31,11 +34,42 @@ class App {
     document.body.classList.remove('stop-scrolling');
   }
 
+  observeNav() {
+    const navHeight = nav.getBoundingClientRect().height;
+    const stickyNav = function (entries) {
+      entries.forEach((entry) => {
+        // console.log(entry);
+        if (!entry.isIntersecting) {
+          nav.classList.add('sticky');
+        } else nav.classList.remove('sticky');
+      });
+    };
+
+    const headerObs = new IntersectionObserver(stickyNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `-${navHeight}px`,
+    });
+
+    headerObs.observe(header);
+  }
+
+  scrollToSection() {
+    const sectionCoords = sectionAbout.getBoundingClientRect();
+    // determine absolute position relative to document (entire page)
+    // current position + current scroll
+    // window.scrollTo({
+    //   left: sectionCoords.left + window.pageXOffset,
+    //   top: sectionCoords.top + window.pageYOffset,
+    //   behavior: 'smooth',
+    // });
+    sectionAbout.scrollIntoView({ behavior: 'smooth' });
+  }
+
   handleHover(e) {
     if (e.target.classList.contains('nav__link')) {
       const link = e.target;
       const siblings = link.closest('nav').querySelectorAll('.nav__link');
-
       siblings.forEach((el) => {
         if (el !== link) {
           el.style.opacity = this;
@@ -49,47 +83,14 @@ class App {
     if (e.target.classList.contains('nav__link')) {
       // need fix for home link
       const id = e.target.getAttribute('href');
+      console.log(id);
       document.querySelector(`${id}`).scrollIntoView({ behavior: 'smooth' });
     }
   }
+
   sayHi() {
-    console.log('hi there');
+    console.log('Welcome back');
   }
 }
 
 new App();
-
-// Intersection Observer
-// const headerHeight = header.getBoundingClientRect().height;
-// const stickyNav = function (entries) {
-//   entries.forEach((entry) => {
-//     // console.log(entry);
-//     // try setInterval
-//     if (!entry.isIntersecting) {
-//       header.classList.add('sticky');
-//       console.log('yay');
-//     } else header.classList.remove('sticky');
-//   });
-// };
-
-// const heroObserver = new IntersectionObserver(stickyNav, {
-//   root: null,
-//   treshold: 0,
-//   rootMargin: `-${headerHeight}px`,
-// });
-
-// heroObserver.observe(hero);
-
-// Scrolling to section
-btnScroll.addEventListener('click', function () {
-  const sectionCoords = sectionAbout.getBoundingClientRect();
-  console.log(sectionCoords);
-  // determine absolute position relative to document (entire page)
-  // current position + current scroll
-  // window.scrollTo({
-  //   left: sectionCoords.left + window.pageXOffset,
-  //   top: sectionCoords.top + window.pageYOffset,
-  //   behavior: 'smooth',
-  // });
-  sectionAbout.scrollIntoView({ behavior: 'smooth' });
-});
