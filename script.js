@@ -1,5 +1,5 @@
-const btnNavToggle = document.querySelector('#nav-toggle');
-const btnNavClose = document.querySelector('#nav-close');
+const btnToggleNav = document.querySelector('#toggle-nav');
+const btnCloseNav = document.querySelector('#close-nav');
 const navContent = document.querySelector('.nav__menu');
 const header = document.querySelector('.header');
 const hero = document.querySelector('.hero');
@@ -7,12 +7,21 @@ const nav = document.querySelector('.nav');
 const sectionAbout = document.querySelector('#section--about');
 const btnScroll = document.querySelector('#btn--scroll-to');
 const navList = document.querySelector('.nav__list');
+const btn = document.querySelector('.nav__link--action');
+const overlay = document.querySelector('.overlay');
+const modal = document.querySelector('.modal');
+const btnCloseModal = document.querySelector('.btn--close-modal');
 
 class App {
   constructor() {
-    btnNavToggle.addEventListener('click', this.toggleNavMenu);
-    btnNavClose.addEventListener('click', this.closeNavMenu);
+    btnToggleNav.addEventListener('click', this.toggleNavMenu);
+    btnCloseNav.addEventListener('click', this.closeNavMenu);
     btnScroll.addEventListener('click', this.scrollToSection);
+
+    // modal
+    btn.addEventListener('click', this.toggleModal);
+    btnCloseModal.addEventListener('click', this.toggleModal);
+    overlay.addEventListener('click', this.toggleModal);
 
     nav.addEventListener('mouseover', this.handleHover.bind(0.1));
     nav.addEventListener('mouseout', this.handleHover.bind(1));
@@ -56,6 +65,7 @@ class App {
 
   scrollToSection() {
     const sectionCoords = sectionAbout.getBoundingClientRect();
+    console.log(sectionCoords);
     // determine absolute position relative to document (entire page)
     // current position + current scroll
     // window.scrollTo({
@@ -81,11 +91,17 @@ class App {
   handleNavLinks(e) {
     e.preventDefault();
     if (e.target.classList.contains('nav__link')) {
-      // need fix for home link
       const id = e.target.getAttribute('href');
-      console.log(id);
+      console.log(e.target);
+      if (!id) return;
       document.querySelector(`${id}`).scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  toggleModal(e) {
+    e.stopPropagation();
+    overlay.classList.toggle('hidden');
+    modal.classList.toggle('hidden');
   }
 
   sayHi() {
@@ -93,4 +109,4 @@ class App {
   }
 }
 
-new App();
+const app = new App();

@@ -25,15 +25,20 @@ p:last-child {
   margin-bottom: 0;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+button {
+  background: none;
+  border: 0;
+  outline: none;
 }
 
 img {
@@ -42,13 +47,8 @@ img {
   display: block;
 }
 
-button {
-  background: none;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-
-[class*='ico'] {
-  cursor: pointer;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

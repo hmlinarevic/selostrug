@@ -11,7 +11,7 @@ NAVIGATION
   );
   border-bottom: 2px solid #283c3e;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
   height: $nav-height;
 }
 
@@ -20,12 +20,6 @@ NAVIGATION
   background: none;
   color: inherit;
   cursor: pointer;
-}
-
-.nav__bars--ico {
-  font-size: 1.25rem;
-  cursor: pointer;
-  display: block;
 }
 
 .nav__menu {
@@ -41,13 +35,6 @@ NAVIGATION
 
 .nav__menu--show {
   transform: translateX(0%);
-}
-
-.nav__close--ico {
-  position: absolute;
-  font-size: 2rem;
-  top: 2rem;
-  right: 2rem;
 }
 
 .nav__list {
@@ -67,26 +54,62 @@ NAVIGATION
   color: $dark-green-color;
   padding: 1em 2em;
   letter-spacing: 1px;
-  transition: opacity 500ms ease;
+  transition: opacity 500ms ease-in-out, background-color 250ms ease-in-out;
 }
 
-// .nav__link:hover,
-// .nav__link:focus {
-//   background: $color--accent;
-//   color: $white-color;
-// }
+// nav buttons / toggle / close
+
+.btn--toggle-nav {
+  height: 26px;
+  padding: 0.3rem;
+}
+
+.btn--close-nav {
+  color: $white-color;
+  position: absolute;
+  font-size: 2.4rem;
+  top: 2rem;
+  right: 2rem;
+}
+
+// nav buttons / icon
+
+.burger--bar {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+}
+
+.burger--ico {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: $white-color;
+  position: relative;
+  &::before {
+    @extend .burger--bar;
+    top: -6px;
+  }
+  &::after {
+    @extend .burger--bar;
+    bottom: -6px;
+  }
+}
 
 // navigation on larger screen size
 @media (min-width: 800px) {
-  .nav__bars--ico,
-  .nav__close--ico {
+  .btn--toggle-nav,
+  .btn--close-nav {
     display: none;
   }
 
   .nav__menu {
     background: inherit;
     visibility: visible;
-    height: $header-height;
+    height: $nav-height;
     display: block;
     position: static;
     transform: translateX(0%);
@@ -105,13 +128,16 @@ NAVIGATION
 
   .nav__link {
     color: #f8f9fa;
-    /* font-size: .75rem; */
-    border: 0;
+    padding: 0.75em 2em;
     background: none;
   }
 
-  .nav__link--contact {
+  .nav__link--action {
     background: $color-7;
     color: #333;
+  }
+  .nav__link--action:hover {
+    background: $color--accent;
+    color: $white-color;
   }
 }

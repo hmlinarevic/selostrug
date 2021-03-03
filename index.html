@@ -28,30 +28,24 @@
     <link rel="stylesheet" href="./styles/style.css" />
 
     <!-- js -->
-    <script type="module" src="./script.js"></script>
+    <script defer src="./script.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
-      <header class="header" id="header">
+      <header class="header" id="scroll-to-header">
         <nav class="nav">
           <div class="container container--flex-sb">
-            <span class="nav__logo nav__link" href="#header">Selo Strug</span>
-            <span
-              class="nav__bars--ico fas fa-bars"
-              id="nav-toggle"
-              aria-label="csc"
-            ></span>
+            <a class="nav__logo nav__link" href="#scroll-to-header"
+              >Selo Strug</a
+            >
+            <button class="btn--toggle-nav" id="toggle-nav">
+              <span class="burger--ico"></span>
+            </button>
 
             <div class="nav__menu">
-              <span
-                class="nav__close--ico fas fa-times-circle"
-                id="nav-close"
-              ></span>
+              <button class="btn--close-nav" id="close-nav">&times;</button>
               <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">pocetna</a>
-                </li>
                 <li class="nav__item">
                   <a class="nav__link" href="#section--about">smjestaj</a>
                 </li>
@@ -59,7 +53,10 @@
                   <a class="nav__link" href="#section--restaurant">restoran</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link nav__link--contact" href="#">kontakt</a>
+                  <a class="nav__link" href="#section--park">lonjsko polje</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link nav__link--action">kontakt</a>
                 </li>
               </ul>
             </div>
@@ -97,7 +94,7 @@
       <main class="main" role="main">
         <!-- about -->
         <section class="section about" id="section--about">
-          <div class="section__caption" id="caption--about">
+          <div class="section__caption">
             <div class="container">
               <span class="section__caption-subtitle subtitle--section"
                 >selo strug</span
@@ -254,7 +251,7 @@
                 <a class="footer__link footer__text" href="#">Restoran</a>
               </li>
               <li class="footer__links-item">
-                <a class="footer__link footer__text" href="#">Smjestaj</a>
+                <a class="footer__link footer__text" href="">Smjestaj</a>
               </li>
             </ul>
             <!-- newsletter -->
@@ -284,6 +281,17 @@
           </div>
         </div>
       </footer>
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <div class="div">this is a test</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam
+          porro ipsa, debitis a explicabo quis dolorum facilis ex iste
+          laboriosam tempora saepe labore repellat fugiat corrupti soluta
+          nesciunt voluptates.
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
     </div>
     <!-- /wrapper -->
   </body>
