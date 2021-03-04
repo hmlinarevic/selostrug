@@ -1,5 +1,6 @@
 .section {
   min-height: 100vh;
+  padding: 20rem 0;
 }
 
 // marker on the screen edge
@@ -27,15 +28,6 @@
 }
 
 @media (min-width: 800px) {
-  .section {
-    // update for either top or bottom
-    // fix adding to the total height
-    // border-top: 3rem solid rgba(255, 255, 255, 0.025);
-    // border-bottom: 3rem solid rgba(255, 255, 255, 0.025);
-
-    padding: 20rem 0;
-  }
-
   .section:last-child {
     margin-bottom: 0;
   }

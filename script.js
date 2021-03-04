@@ -7,7 +7,7 @@ const nav = document.querySelector('.nav');
 const sectionAbout = document.querySelector('#section--about');
 const btnScroll = document.querySelector('#btn--scroll-to');
 const navList = document.querySelector('.nav__list');
-const btn = document.querySelector('.nav__link--action');
+const btnOpenModal = document.querySelector('.nav__link--action');
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
 const btnCloseModal = document.querySelector('.btn--close-modal');
@@ -19,9 +19,9 @@ class App {
     btnScroll.addEventListener('click', this.scrollToSection);
 
     // modal
-    btn.addEventListener('click', this.toggleModal);
-    btnCloseModal.addEventListener('click', this.toggleModal);
-    overlay.addEventListener('click', this.toggleModal);
+    btnOpenModal.addEventListener('click', this.openModal);
+    btnCloseModal.addEventListener('click', this.closeModal);
+    overlay.addEventListener('click', this.closeModal);
 
     nav.addEventListener('mouseover', this.handleHover.bind(0.1));
     nav.addEventListener('mouseout', this.handleHover.bind(1));
@@ -98,10 +98,15 @@ class App {
     }
   }
 
-  toggleModal(e) {
+  openModal(e) {
     e.stopPropagation();
-    overlay.classList.toggle('hidden');
-    modal.classList.toggle('hidden');
+    overlay.classList.remove('hidden');
+    modal.classList.remove('hidden');
+  }
+
+  closeModal() {
+    overlay.classList.add('hidden');
+    modal.classList.add('hidden');
   }
 
   sayHi() {

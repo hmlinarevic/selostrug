@@ -63,7 +63,8 @@ ARTICLE
 /* ====================
 NAVIGATION
 ==================== */
-.nav__logo.nav__link {
+.nav__logo.nav__link,
+.nav__item--logo {
   font-family: 'Lobster';
   font-weight: 400;
   font-size: 3rem;
