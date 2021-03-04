@@ -778,6 +778,7 @@ PARK
       -ms-flex-align: center;
           align-items: center;
   color: #333;
+  max-width: 220px;
 }
 
 .section__btn .fas {
@@ -811,6 +812,12 @@ PARK
 
 .sticky {
   position: fixed;
+}
+
+.article__quote {
+  text-align: center;
+  font-size: 3rem;
+  grid-column: 1/-1;
 }
 
 .flex--center {

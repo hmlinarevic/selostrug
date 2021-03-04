@@ -12,6 +12,7 @@
 .section__btn {
   @include flexCenter;
   color: #333;
+  max-width: 220px;
 }
 
 // section button icon
@@ -48,4 +49,11 @@
 
 .sticky {
   position: fixed;
+}
+
+// article quote
+.article__quote {
+  text-align: center;
+  font-size: 3rem;
+  grid-column: 1/-1;
 }
