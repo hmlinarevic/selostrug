@@ -282,17 +282,63 @@
           </div>
         </div>
       </footer>
-      <div class="modal hidden">
+
+      <!-- modal -->
+      <div class="modal">
         <button class="btn--close-modal">&times;</button>
-        <div class="div">this is a test</div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam
-          porro ipsa, debitis a explicabo quis dolorum facilis ex iste
-          laboriosam tempora saepe labore repellat fugiat corrupti soluta
-          nesciunt voluptates.
-        </p>
+        <div class="modal__header">
+          <div class="container container--flex-sb">
+            <h3 class="modal__header--title">Kako doci do nas?</h3>
+
+            <a class="modal__header--link" href="#"
+              ><span class="modal__map--icon fas fa-map-marked-alt"></span
+              >otvori kartu ovdje</a
+            >
+          </div>
+        </div>
+        <div class="container">
+          <div class="modal__subject">
+            <h2 class="title">Kontaktiraj nas!</h2>
+            <!-- add required to inputs -->
+            <form class="modal__form container--grid" action="">
+              <label for="first-name">Ime:</label>
+              <input type="text" name="first-name" id="first-name" />
+              <!-- <label for="last-name">Prezime</label>
+            <input type="text" name="last-name" id="last-name" /> -->
+              <label for="email">email:</label>
+              <input type="email" name="email" id="email" />
+              <label for="contact-number">Kontakt broj</label>
+              <input type="number" name="contact-number" id="contact-number" />
+              <label class="label-textarea" for="user-message"
+                >Tvoja poruka:</label
+              >
+              <textarea
+                name="user-message"
+                id="user-message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button class="btn" type="submit">posalji!</button>
+            </form>
+          </div>
+
+          <div class="modal__footer">
+            <p class="modal__footer--notice">
+              Ukoliko imas dodatnih pitanja, kontaktiraj nas!
+            </p>
+            <p class="modal__details">
+              <span class="modal__details--bold">email:</span
+              >info@ekoetno-selo-strug.hr
+              <span class="modal__details--bold">tel:</span>+385 44 611 215
+              <span class="modal__details--bold">mob:</span>
+              +385 91 6006 378
+              <span class="modal__details--bold">adresa:</span>
+              Plesmo 26, 443330 Novska
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="overlay hidden"></div>
+      <div class="overlay"></div>
     </div>
     <!-- /wrapper -->
   </body>
