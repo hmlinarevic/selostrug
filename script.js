@@ -4,7 +4,7 @@ const navContent = document.querySelector('.nav__menu');
 const header = document.querySelector('.header');
 const hero = document.querySelector('.hero');
 const nav = document.querySelector('.nav');
-const sectionAbout = document.querySelector('#section--about');
+const sectionAccommodation = document.querySelector('#section--accommodation');
 const btnScroll = document.querySelector('#btn--scroll-to');
 const navList = document.querySelector('.nav__list');
 const btnOpenModal = document.querySelector('.nav__link--action');
@@ -64,16 +64,16 @@ class App {
   }
 
   scrollToSection() {
-    const sectionCoords = sectionAbout.getBoundingClientRect();
-    console.log(sectionCoords);
+    const sectionCoords = sectionAccommodation.getBoundingClientRect();
     // determine absolute position relative to document (entire page)
     // current position + current scroll
+    // console.log(sectionCoords);
     // window.scrollTo({
     //   left: sectionCoords.left + window.pageXOffset,
     //   top: sectionCoords.top + window.pageYOffset,
     //   behavior: 'smooth',
     // });
-    sectionAbout.scrollIntoView({ behavior: 'smooth' });
+    sectionAccommodation.scrollIntoView({ behavior: 'smooth' });
   }
 
   handleHover(e) {

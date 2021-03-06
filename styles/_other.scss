@@ -1,4 +1,7 @@
-// button
+/* ====================
+BUTTONS
+==================== */
+
 .btn {
   // testing width relative to four column grid
   // width: 50%;
@@ -49,11 +52,4 @@
 
 .sticky {
   position: fixed;
-}
-
-// article quote
-.article__quote {
-  text-align: center;
-  font-size: 3rem;
-  grid-column: 1/-1;
 }
