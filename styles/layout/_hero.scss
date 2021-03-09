@@ -61,9 +61,20 @@ HERO
 }
 
 .hero__btn {
+  background: $color-1;
   border-color: $color-7;
   margin-left: auto;
   margin-right: auto;
+  transition: box-shadow 250ms, background-color 250ms ease-in-out;
+}
+
+.hero__btn span {
+  margin-left: 1rem;
+}
+
+.hero__btn:hover {
+  background: $color-3;
+  // color: $color-1;
 }
 
 @media (min-width: 800px) {
@@ -88,6 +99,7 @@ HERO
       rgba(179, 165, 148, 0.867919) 99.99%,
       rgba(179, 165, 148, 0) 100%
     );
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.35);
   }
 
   .hero .container--grid {
@@ -114,9 +126,13 @@ HERO
     margin-left: 0;
   }
 
+  .hero__btn:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
   .hero__img {
     height: 500px;
     grid-column: span 2;
-    outline: 30px solid $color-7;
+    outline: 20px solid $color-7;
   }
 }

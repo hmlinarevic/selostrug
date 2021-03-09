@@ -13,6 +13,7 @@ NAVIGATION
   width: 100%;
   z-index: 99;
   height: $nav-height;
+  // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .nav__logo.nav__link {
@@ -67,7 +68,7 @@ NAVIGATION
   color: $dark-green-color;
   padding: 1em 2em;
   letter-spacing: 1px;
-  transition: opacity 500ms ease-in-out, background-color 250ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 // nav buttons / toggle / close
@@ -160,10 +161,13 @@ NAVIGATION
 
   .nav__link--action {
     background: $color-7;
-    color: #333;
+    color: $color-1;
+    transition: background-color 250ms ease-in-out, box-shadow 250ms,
+      opacity 500ms ease-in-out;
   }
   .nav__link--action:hover {
     background: $color--accent;
     color: $white-color;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 }

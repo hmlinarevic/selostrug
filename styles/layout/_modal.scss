@@ -178,7 +178,7 @@
   grid-auto-flow: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-weight: 300;
 }
 
@@ -190,4 +190,15 @@
 .modal__footer--email {
   font-size: 1.5rem;
   // letter-spacing: 0.25px;
+}
+
+// to implement!
+.modal__footer div {
+  margin: 0 auto;
+  width: max-content;
+  // border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }

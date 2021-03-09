@@ -1,7 +1,8 @@
 @import './resets';
+@import './global';
+@import './mixins';
 @import './variables';
 @import './typography';
-@import './mixins';
 
 // layout
 @import './layout/containers';
