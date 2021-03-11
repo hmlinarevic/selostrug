@@ -164,6 +164,7 @@ NAVIGATION
     color: $color-1;
     transition: background-color 250ms ease-in-out, box-shadow 250ms,
       opacity 500ms ease-in-out;
+    border-radius: 5px;
   }
   .nav__link--action:hover {
     background: $color--accent;

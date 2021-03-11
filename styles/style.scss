@@ -1,11 +1,11 @@
 @import './resets';
-@import './global';
 @import './mixins';
 @import './variables';
+@import './containers';
 @import './typography';
+@import './buttons';
 
 // layout
-@import './layout/containers';
 @import './layout/header';
 @import './layout/nav';
 @import './layout/hero';

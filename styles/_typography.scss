@@ -6,42 +6,34 @@ body {
 }
 
 /* ====================
-TITLE
+SECTION
 ==================== */
 
-.title--big {
-  font-weight: 400;
-  margin-bottom: 0;
-  color: $white-color;
-}
-
-@media (min-width: 900px) {
-  .title--big {
-    font-size: 4rem;
-    color: #333;
-  }
-}
-
-.title--small {
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 5px;
-  font-size: 0.85rem;
-  margin-bottom: 0.25em;
-  color: $color--accent;
-}
-
-.title--section {
+.section__header-title {
   font-size: 6rem;
   font-weight: 700;
 }
 
-.subtitle--section {
-  text-transform: uppercase;
-  letter-spacing: 10px;
+.section__header-subtitle {
   font-size: 2rem;
   font-weight: 400;
-  color: #f8f9fa;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.section__footer {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section__footer-title {
+  font-size: 3rem;
+}
+
+.section__footer-notice {
+  font-size: 2.2rem;
+  font-weight: 300;
 }
 
 /* ====================
@@ -50,8 +42,8 @@ ARTICLE
 
 .article__body {
   font-size: 2rem;
-  line-height: 1.9;
   font-weight: 300;
+  line-height: 1.9;
 }
 
 @media (min-width: 800px) {
