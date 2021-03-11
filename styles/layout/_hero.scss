@@ -63,6 +63,7 @@ HERO
 .hero__btn {
   background: $color-1;
   border-color: $color-7;
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
   transition: box-shadow 250ms, background-color 250ms ease-in-out;
@@ -133,6 +134,6 @@ HERO
   .hero__img {
     height: 500px;
     grid-column: span 2;
-    outline: 20px solid $color-7;
+    outline: 2rem solid $color-7;
   }
 }

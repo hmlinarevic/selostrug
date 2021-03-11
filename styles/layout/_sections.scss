@@ -7,64 +7,47 @@ SECTION
   padding: 20rem 0;
 }
 
-// marker on the screen edge
-@media (min-width: 990px) {
-  .marker {
-    position: absolute;
-    content: '';
-    width: 3rem;
-    height: 100%;
-    top: 0;
-    background: $color-5;
-  }
+.section__header,
+.section__content {
+  // limit section areas width to container width
+  @extend .container;
 }
 
 .section__header {
   margin-bottom: 6rem;
-  position: relative;
-  // marker on the screen edge (all sections)
-  &::before {
-    @extend .marker;
-  }
+}
+
+.section__header-subtitle {
+  display: block;
 }
 
 .section__footer {
-  margin-top: 12rem;
+  margin: 12rem 0 0;
+  padding: 12rem 0;
 }
 
-@media (min-width: 800px) {
-  .section:last-child {
-    margin-bottom: 0;
-  }
+.section__footer-title {
+  display: block;
+  margin-bottom: 1rem;
+}
 
-  // new stuff
-  .section__footer h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 3rem;
-    display: grid;
-    grid-template-columns: auto max-content auto;
-    align-items: center;
-    &::before,
-    &::after {
-      content: '';
-      width: calc(100% - 3rem);
-      height: 0.5px;
-      display: block;
-      background: #333;
-    }
-    &::before {
-      margin-right: auto;
-    }
-    &::after {
-      margin-left: auto;
-    }
-  }
-  .section__btn {
-    margin: 0 auto;
-    min-width: 220px;
-    font-size: 1.85rem;
-  }
+.section__footer-notice {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.section__footer-btn {
+  width: max-content;
+  display: block;
+  border: 2px solid rgba(51, 51, 51, 0.95);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__footer-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #f8f9fa;
 }
 
 /* ====================
@@ -72,16 +55,18 @@ ACCOMMODATION
 ==================== */
 
 .accommodation {
+  padding-bottom: 0;
   background: $color-4;
   color: rgba(51, 51, 51, 0.95);
+
+  .section__footer {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .accommodation {
-  .section__header {
-    &::before {
-      left: 0;
-      background: $color-5;
-    }
+  .section__header-subtitle {
+    color: $color-7;
   }
 
   .article__photo {
@@ -98,6 +83,7 @@ ACCOMMODATION
     .article__photo {
       width: 100%;
       height: 500px;
+      border-radius: 5px;
       object-fit: cover;
       filter: brightness(90%);
       // border: 1px solid #333;
@@ -130,15 +116,15 @@ RESTAURANT
 
 @media (min-width: 800px) {
   .restaurant {
-    .section__header {
+    .section__header-title {
       &::before {
-        background: #f8f9fa;
+        background: $color-8;
         right: 0;
       }
     }
 
     .section__header-subtitle {
-      color: $color-4;
+      color: $color-8;
     }
     .article__photo {
       height: 300px;
@@ -177,6 +163,9 @@ PARK
     .section__header-title {
       font-size: 6rem;
       margin-bottom: 0;
+      &::before {
+        display: none;
+      }
     }
 
     .section__header-subtitle {

@@ -1,20 +1,5 @@
-/* ====================
-BUTTONS
-==================== */
-
-.section__btn {
-  @include flexCenter;
-  color: #333;
-  max-width: 220px;
-}
-
-// section button icon
-.section__btn .fas {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
 // background between sections
+
 .background--image {
   background: url('../../assets/photos/web/mossholder1920.jpg');
   background-size: cover;
@@ -35,6 +20,7 @@ BUTTONS
 }
 
 // for javascript
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;

@@ -1,0 +1,24 @@
+/* ====================
+BUTTONS
+==================== */
+
+.btn {
+  font-size: 1.85rem;
+  padding: 0.75em 2em;
+}
+
+.section__footer-btn {
+  font-weight: 300;
+}
+
+.section__btn {
+  @include flexCenter;
+  color: #333;
+  max-width: 220px;
+}
+
+// section button icon
+.section__btn .fas {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
