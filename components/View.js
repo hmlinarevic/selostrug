@@ -1,4 +1,5 @@
 const btnScroll = document.querySelector('#btn--scroll-to');
+const sectionAccommodation = document.querySelector('#section--accommodation');
 
 export default class View {
   constructor() {

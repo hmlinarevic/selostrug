@@ -16,7 +16,7 @@
         "layout/_footer.scss",
         "layout/_modal.scss",
         "_other.scss",
-        "pages/_accommodation.scss"
+        "pages/_accommodations.scss"
     ],
     "names": [],
     "file": "style.css"

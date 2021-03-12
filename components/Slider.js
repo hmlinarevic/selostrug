@@ -5,7 +5,7 @@ const btnRight = document.querySelector('.slider__btn--right');
 let currentSlide = 0;
 const maxSlide = slides.length;
 
-export default class Slider {
+class Slider {
   constructor() {
     btnRight.addEventListener('click', this.nextSlide.bind(this));
     btnLeft.addEventListener('click', this.prevSlide.bind(this));
@@ -33,3 +33,5 @@ export default class Slider {
     this.goToSlide(currentSlide);
   }
 }
+
+new Slider();
