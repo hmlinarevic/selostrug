@@ -59,7 +59,6 @@ textarea {
   resize: none;
 }
 
-/* colors */
 /* typography */
 .wrapper {
   min-width: 300px;
@@ -284,6 +283,7 @@ NAVIGATION
   background: #354f52;
   background: -webkit-gradient(linear, left top, right top, from(#354f52), to(#283c3e));
   background: linear-gradient(90deg, #354f52 0%, #283c3e 100%);
+  color: #f8f9fa;
   border-bottom: 2px solid #283c3e;
   width: 100%;
   z-index: 99;
@@ -353,7 +353,7 @@ NAVIGATION
   min-width: 200px;
   text-align: center;
   background: #f8f9fa;
-  color: #2a3019;
+  color: #354f52;
   padding: 1em 2em;
   letter-spacing: 1px;
   -webkit-transition: opacity 500ms ease-in-out;
@@ -692,6 +692,8 @@ ACCOMMODATION
   .accommodation .article__block {
     display: -ms-grid;
     display: grid;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
     row-gap: 5rem;
   }
   .accommodation .article__body {
@@ -1100,5 +1102,72 @@ PARK
 
 .sticky {
   position: fixed;
+}
+
+.page-accommodation .container, .page-accommodation .section__header,
+.page-accommodation .section__content {
+  margin: 6rem auto;
+}
+
+.page-accommodation .article {
+  max-width: 440px;
+}
+
+.page-accommodation .article__title {
+  font-size: 2.2rem;
+}
+
+.page-accommodation .article__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.slider {
+  margin: 6rem 0;
+  border: 1px solid black;
+  width: 700px;
+  height: 400px;
+  border-top: 10px solid lightblue;
+  border-bottom: 10px solid lightblue;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+  position: absolute;
+}
+
+.slide--1 {
+  z-index: 100;
+}
+
+.slide__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__btn {
+  border: 1px solid white;
+  position: relative;
+  top: 50%;
+}
+
+.slider__btn--left {
+  left: 4%;
+  z-index: 100;
+}
+
+.slider__btn--right {
+  left: 86%;
+  z-index: 100;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/vectors/flower_purple.png"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- css/scss -->
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container container--flex-sb">
+        <a class="nav__logo nav__link" href="#scroll-to-header">Selo Strug</a>
+        <button class="btn--toggle-nav" id="toggle-nav">
+          <span class="burger--ico"></span>
+        </button>
+
+        <div class="nav__menu">
+          <button class="btn--close-nav" id="close-nav">&times;</button>
+          <ul class="nav__list">
+            <li class="nav__item--logo">
+              <span>Selo Strug</span>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="../index.html">pocetna</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link nav__link--action">kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- working here -->
+    <main class="page-accommodation">
+      <div class="container">
+        <article class="article">
+          <h3 class="article__title">Dragi nasi gosti</h3>
+          <p class="article__text">
+            Na nasem imanju možete se smjestiti u autohtonim hrastovim
+            tradicijskim kućama Vesna i Kata i prelijepoj staroj zidanoj kući
+            Jelica.
+          </p>
+          <p class="article__text">
+            Raspolažemo sa šest dvokrevetnih soba i apartmanima Kata i Vesna.
+            Svaki apartman ima dvije spavaće sobe i kupaonicu. Sobe su uređene u
+            autohtonom etno stilu, uz kupaonicu, opremljene su TV-om, centralnim
+            grijanjem, klimom, hladnjakom i sefom.
+          </p>
+        </article>
+        <div class="slider">
+          <div class="slide slide--1">
+            <img
+              class="slide__img slide__img--1"
+              src="../assets/photos/rooms/room1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide slide--2">
+            <img
+              class="slide__img slide__img--2"
+              src="../assets/photos/rooms/room2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide slide--3">
+            <img
+              class="slide__img"
+              src="../assets/photos/rooms/room3.jpg"
+              alt=""
+            />
+          </div>
+          <button class="slider__btn slider__btn--left">←</button>
+          <button class="slider__btn slider__btn--right">→</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container container--grid">
+          <!-- contact -->
+          <div class="footer__contact">
+            <span class="footer__title">kontakt</span>
+            <p class="footer__title--info">Adresa:</p>
+            <p class="footer__text">Plesmo 26, 44330 Novska</p>
+            <p class="footer__title--info">Tel:</p>
+            <p class="footer__text">+385 44 611 215</p>
+            <p class="footer__title--info">Mob:</p>
+            <p class="footer__text">+385 91 6006 378</p>
+          </div>
+          <!-- weather -->
+          <div class="footer__weather">
+            <span class="footer__title">vrijeme</span>
+            <p class="footer__col-contact-info">
+              something about the weather: Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ipsum corrupti atque soluta.
+            </p>
+          </div>
+          <!-- links -->
+          <ul class="footer__links">
+            <span class="footer__title">linkovi</span>
+            <li class="footer__links-item">
+              <a class="footer__link footer__text" href="#">Novosti</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link footer__text" href="#">Restoran</a>
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link footer__text" href="">Smjestaj</a>
+            </li>
+          </ul>
+          <!-- newsletter -->
+          <div class="footer__col footer__col--4">
+            <span class="footer__title">newsletter</span>
+            <p class="footer__text">
+              Prijavi se na newsletter listu i primaj novosti.
+            </p>
+            <form class="footer__newsletter" action="">
+              <label for="">
+                <input type="text" />
+              </label>
+              <button>posalji!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bot">
+        <div class="container container--flex-sb">
+          <p class="footer__rights">
+            Copyright © 2021. Selo Strug. All Rights Reserved.
+          </p>
+          <div class="footer__socials">
+            <span class="footer__icon fab fa-facebook-f"></span>
+            <span class="footer__icon fab fa-instagram"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <div class="modal__header">
+        <div class="container container--flex-sb">
+          <h3 class="modal__header--title">Kako doci do nas?</h3>
+
+          <a class="modal__header--link" href="#"
+            ><span class="modal__map--icon fas fa-map-marked-alt"></span>otvori
+            kartu ovdje</a
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal__subject">
+          <h2 class="title">Kontaktiraj nas!</h2>
+          <!-- add required to inputs -->
+          <form class="modal__form container--grid" action="">
+            <label for="first-name">Ime:</label>
+            <input type="text" name="first-name" id="first-name" />
+            <!-- <label for="last-name">Prezime</label>
+          <input type="text" name="last-name" id="last-name" /> -->
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" />
+            <label for="contact-number">Kontakt broj:</label>
+            <input type="number" name="contact-number" id="contact-number" />
+            <label class="label-textarea" for="user-message"
+              >Tvoja poruka:</label
+            >
+            <textarea
+              name="user-message"
+              id="user-message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button class="btn" type="submit">posalji!</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal__footer">
+        <p class="modal__footer--notice">
+          Ukoliko imas dodatnih pitanja, javi nam se!
+        </p>
+        <div>
+          <p class="modal__footer--details">
+            <span class="modal__footer--icon fas fa-phone-square"></span>
+            <span class="modal__footer--number">+385 44 611 215</span>
+            <span class="modal__footer--number">+385 91 6006 378</span>
+          </p>
+          <p class="modal__footer--details">
+            <span class="modal__footer--icon fas fa-envelope-open-text"></span>
+            <span class="modal__footer--email">info@ekoetno-selo-strug.hr</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- js -->
+    <script src="../components/Slider.js"></script>
+  </body>
+</html>
