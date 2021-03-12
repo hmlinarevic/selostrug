@@ -1,6 +1,5 @@
-const header = document.querySelector('.header');
-
 const nav = document.querySelector('.nav');
+
 const btnToggle = document.querySelector('#toggle-nav');
 const btnClose = document.querySelector('#close-nav');
 
@@ -21,9 +20,6 @@ export default class Nav {
     btnOpenModal.addEventListener('click', this.openModal);
     btnCloseModal.addEventListener('click', this.closeModal);
     overlay.addEventListener('click', this.closeModal);
-
-    // intersection observer
-    this.runObserver();
   }
 
   // open / close nav menu
@@ -78,24 +74,4 @@ export default class Nav {
   }
 
   // intersection observer
-
-  runObserver() {
-    const navHeight = nav.getBoundingClientRect().height;
-    const stickyNav = function (entries) {
-      entries.forEach((entry) => {
-        // console.log(entry);
-        if (!entry.isIntersecting) {
-          nav.classList.add('sticky');
-        } else nav.classList.remove('sticky');
-      });
-    };
-
-    const obs = new IntersectionObserver(stickyNav, {
-      root: null,
-      threshold: 0,
-      rootMargin: `-${navHeight}px`,
-    });
-
-    obs.observe(header);
-  }
 }

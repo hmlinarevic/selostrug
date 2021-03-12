@@ -1,13 +1,17 @@
-import View from '/components/View.js';
 import Nav from './components/Nav.js';
+import View from '/components/View.js';
+import initHeaderObs from './utils/headerObs.js';
 
 class App {
-  path = window.location.pathname;
-  page = this.path.split('/').pop();
+  //   path = window.location.pathname;
+  //   page = this.path.split('/').pop();
 
   constructor() {
     this.greetDeveloper();
     this.initComponents();
+
+    // intersection observer
+    initHeaderObs();
   }
 
   initComponents() {
