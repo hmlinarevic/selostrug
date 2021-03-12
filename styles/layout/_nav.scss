@@ -9,6 +9,7 @@ NAVIGATION
     rgba(53, 79, 82, 1) 0%,
     rgba(40, 60, 62, 1) 100%
   );
+  color: $white-color;
   border-bottom: 2px solid #283c3e;
   width: 100%;
   z-index: 99;
@@ -65,7 +66,7 @@ NAVIGATION
   min-width: 200px;
   text-align: center;
   background: $white-color;
-  color: $dark-green-color;
+  color: $color-1;
   padding: 1em 2em;
   letter-spacing: 1px;
   transition: opacity 500ms ease-in-out;
@@ -167,7 +168,7 @@ NAVIGATION
     border-radius: 5px;
   }
   .nav__link--action:hover {
-    background: $color--accent;
+    background: $color-3;
     color: $white-color;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }

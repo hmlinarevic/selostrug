@@ -1,3 +1,5 @@
+// wrapper
+
 .wrapper {
   min-width: 300px;
   margin: 0 auto;
@@ -9,7 +11,8 @@
   margin: 0 auto;
 }
 
-// container grid
+// containers
+
 .container--grid {
   display: grid;
 }
@@ -18,7 +21,6 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-// container flex
 .container--flex-sb {
   height: 100%;
   display: flex;
@@ -26,7 +28,6 @@
   align-items: center;
 }
 
-// container on larger screen size
 @media (min-width: 800px) {
   .container {
     width: 80%;

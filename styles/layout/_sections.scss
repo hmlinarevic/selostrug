@@ -91,11 +91,14 @@ ACCOMMODATION
     }
 
     .article__block {
+      // border: 3px dashed #fff;
       display: grid;
+      align-content: flex-start;
       row-gap: 5rem;
     }
 
     .article__body {
+      // border: 1px solid orange;
       margin: 0;
     }
   }
